@@ -24,14 +24,6 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 	// Units that player can fall before a falling damage function is run. To disable, type "infinity" in the inspector
 	public float fallingDamageThreshold = 10.0f;
 	
-	// If the player ends up on a slope which is at least the Slope Limit as set on the character controller, then he will slide down
-	public bool slideWhenOverSlopeLimit = false;
-	
-	// If checked and the player is on an object tagged "Slide", he will slide down it regardless of the slope limit
-	public bool slideOnTaggedObjects = false;
-	
-	public float slideSpeed = 12.0f;
-	
 	// If checked, then the player can change direction while in the air
 	public bool airControl = false;
 	
@@ -50,7 +42,6 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 	private RaycastHit hit;
 	private float fallStartLevel;
 	private bool falling;
-	private float slideLimit;
 	private float rayDistance;
 	private Vector3 contactPoint;
 	private bool playerControl = false;
@@ -61,7 +52,6 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 		myTransform = transform;
 		speed = walkSpeed;
 		rayDistance = controller.height * .5f + controller.radius;
-		slideLimit = controller.slopeLimit - .1f;
 		jumpTimer = antiBunnyHopFactor;
 	}
 	
@@ -72,20 +62,6 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 		float inputModifyFactor = (inputX != 0.0f && inputY != 0.0f && limitDiagonalSpeed)? .7071f : 1.0f;
 		
 		if (grounded) {
-			bool sliding = false;
-			// See if surface immediately below should be slid down. We use this normally rather than a ControllerColliderHit point,
-			// because that interferes with step climbing amongst other annoyances
-			if (Physics.Raycast(myTransform.position, -Vector3.up, out hit, rayDistance)) {
-				if (Vector3.Angle(hit.normal, Vector3.up) > slideLimit)
-					sliding = true;
-			}
-			// However, just raycasting straight down from the center can fail when on steep slopes
-			// So if the above raycast didn't catch anything, raycast down from the stored ControllerColliderHit point instead
-			else {
-				Physics.Raycast(contactPoint + Vector3.up, -Vector3.up, out hit);
-				if (Vector3.Angle(hit.normal, Vector3.up) > slideLimit)
-					sliding = true;
-			}
 			
 			// If we were falling, and we fell a vertical distance greater than the threshold, run a falling damage routine
 			if (falling) {
@@ -96,16 +72,8 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 			
 			// If running isn't on a toggle, then use the appropriate speed depending on whether the run button is down
 			if (!toggleRun)
-				speed = Input.GetButton("Run")? runSpeed : walkSpeed;
-			
-			// If sliding (and it's allowed), or if we're on an object tagged "Slide", get a vector pointing down the slope we're on
-			if ( (sliding && slideWhenOverSlopeLimit) || (slideOnTaggedObjects && hit.collider.tag == "Slide") ) {
-				Vector3 hitNormal = hit.normal;
-				moveDirection = new Vector3(hitNormal.x, -hitNormal.y, hitNormal.z);
-				Vector3.OrthoNormalize (ref hitNormal, ref moveDirection);
-				moveDirection *= slideSpeed;
-				playerControl = false;
-			}
+				speed = Input.GetButton("Run")? runSpeed : walkSpeed;			
+
 			// Otherwise recalculate moveDirection directly from axes, adding a bit of -y to avoid bumping down inclines
 			else {
 				moveDirection = new Vector3(inputX * inputModifyFactor, -antiBumpFactor, inputY * inputModifyFactor);
@@ -161,5 +129,12 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 	// have hitpoints and remove some of them based on the distance fallen, add sound effects, etc.
 	void FallingDamageAlert (float fallDistance) {
 		print ("Ouch! Fell " + fallDistance + " units!");
+	}
+
+	public bool GetGrounded(){
+		if (grounded) {
+			return true;
+		}
+		return false;
 	}
 }

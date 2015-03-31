@@ -50,7 +50,7 @@ public class SimpleSmoothMouseLook : MonoBehaviour
 		
 		// Find the absolute mouse movement value from point zero.
 		_mouseAbsolute += _smoothMouse;
-		
+				
 		// Clamp and apply the local x value first, so as not to be affected by world transforms.
 		if (clampInDegrees.x < 360)
 			_mouseAbsolute.x = Mathf.Clamp(_mouseAbsolute.x, -clampInDegrees.x * 0.5f, clampInDegrees.x * 0.5f);
@@ -76,5 +76,8 @@ public class SimpleSmoothMouseLook : MonoBehaviour
 			var yRotation = Quaternion.AngleAxis(_mouseAbsolute.x, transform.InverseTransformDirection(Vector3.up));
 			transform.localRotation *= yRotation;
 		}
+
+
+
 	}
 }
