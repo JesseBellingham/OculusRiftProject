@@ -5,6 +5,8 @@ Project("{D502A50E-D945-D5FC-A74E-0105575B5B34}") = "Moon", "Assembly-CSharp-fir
 EndProject
 Project("{D502A50E-D945-D5FC-A74E-0105575B5B34}") = "Moon", "Assembly-CSharp.csproj", "{5F7A3686-43AD-4E1B-93DF-A737D9CF875F}"
 EndProject
+Project("{D502A50E-D945-D5FC-A74E-0105575B5B34}") = "Moon", "Assembly-CSharp-Editor.csproj", "{7835CE44-7268-8AAA-F2B3-614599D0845D}"
+EndProject
 Project("{D502A50E-D945-D5FC-A74E-0105575B5B34}") = "Moon", "Assembly-UnityScript-firstpass.unityproj", "{FD54FB68-6D95-9933-E35D-BE9A35B9CA36}"
 EndProject
 Project("{D502A50E-D945-D5FC-A74E-0105575B5B34}") = "Moon", "Assembly-UnityScript.unityproj", "{1EABCD9E-51B5-91DC-DDC9-2E7E85C10C09}"
@@ -23,6 +25,10 @@ Global
 		{5F7A3686-43AD-4E1B-93DF-A737D9CF875F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F7A3686-43AD-4E1B-93DF-A737D9CF875F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F7A3686-43AD-4E1B-93DF-A737D9CF875F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7835CE44-7268-8AAA-F2B3-614599D0845D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7835CE44-7268-8AAA-F2B3-614599D0845D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7835CE44-7268-8AAA-F2B3-614599D0845D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7835CE44-7268-8AAA-F2B3-614599D0845D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FD54FB68-6D95-9933-E35D-BE9A35B9CA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FD54FB68-6D95-9933-E35D-BE9A35B9CA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD54FB68-6D95-9933-E35D-BE9A35B9CA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																														GlobalSection(MonoDevelopProperties) = preSolution
+																																																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
