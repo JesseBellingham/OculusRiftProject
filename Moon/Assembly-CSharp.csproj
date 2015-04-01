@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PlayerRandomSpawn.cs" />
      <Compile Include="Assets\Scripts\SimpleSmoothMouseLook.cs" />
+     <Compile Include="Assets\Scripts\ThrowBall.cs" />
      <Compile Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\CustomTerrainScript.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
