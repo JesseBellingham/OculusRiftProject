@@ -41,7 +41,7 @@ public class Gun : MonoBehaviour {
 		}
 	}
 	
-	void FixedUpdate () {
+	void Update () {
 		// Fire if the left mouse button is clicked
 		if (Input.GetButtonDown("GunEquip")) {			
 			EquipUnequipGun();
