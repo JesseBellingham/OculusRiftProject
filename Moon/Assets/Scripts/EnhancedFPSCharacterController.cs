@@ -62,11 +62,6 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 		// If both horizontal and vertical are used simultaneously, limit speed (if allowed), so the total doesn't exceed normal move speed
 		float inputModifyFactor = (inputX != 0.0f && inputY != 0.0f && limitDiagonalSpeed)? .7071f : 1.0f;
 
-		/*if (this.transform.localPosition.y <= -50) {
-			Application.LoadLevel (0);
-			playerFell = true;
-		}*/
-
 		if (grounded) {
 			
 			// If we were falling, and we fell a vertical distance greater than the threshold, run a falling damage routine
@@ -136,18 +131,4 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 	void FallingDamageAlert (float fallDistance) {
 		print ("Ouch! Fell " + fallDistance + " units!");
 	}
-
-	public bool GetGrounded(){
-		if (grounded) {
-			return true;
-		}
-		return false;
-	}
-
-	void OnGUI() {
-		if (playerFell) {
-			GUI.Label (new Rect (0,0,100,50), "You fell...");
-		}
-	}
-
 }

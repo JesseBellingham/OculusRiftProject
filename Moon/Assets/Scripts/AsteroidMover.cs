@@ -7,6 +7,8 @@ public class AsteroidMover : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Applies forward motion to the Rigidbody component of each asteroid created
+
 		GetComponent<Rigidbody> ().velocity = transform.forward * speed;
 	}
 }

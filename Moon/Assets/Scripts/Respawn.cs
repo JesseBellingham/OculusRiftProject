@@ -16,10 +16,6 @@ public class Respawn : MonoBehaviour {
 
 		Renderer renderer = this.GetComponent<Renderer> ();
 		renderer.enabled = !isHidden;
-
-
-
-
 	}
 	
 	// Update is called once per frame

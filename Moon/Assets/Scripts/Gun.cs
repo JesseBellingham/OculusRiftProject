@@ -6,7 +6,10 @@ public class Gun : MonoBehaviour {
 	public GameObject projectile;
 	public bool isHidden = true;
 
-	void Start(){				
+	void Start(){
+		// On application start, an array is made of all the renderers of each of the gun models components
+		// Each component in the model is set to not render when the player first spawns in
+
 		GameObject gun = GameObject.FindGameObjectWithTag("Gun");
 		Renderer[] renderers = gun.GetComponentsInChildren<Renderer>();
 
@@ -14,14 +17,21 @@ public class Gun : MonoBehaviour {
 			r.enabled = !isHidden;
 		}
 	}
-	
-	// Fire a bullet 
+	 
 	void Fire () {
-		// Create a new bullet pointing in the same direction as the gun 
+		// Creates a new projectile pointing in the same direction as the gun
+		// Projectile is given motion in the Projectile script
+
 		GameObject cloneProjectile = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
 	}
 
 	void EquipUnequipGun(){
+		// Runs on button press -- checks if the model isHidden or not
+		// If the model is hidden, bool isHidden is changed to false
+		// and the gun model components are rendered on the screen
+		// If the model is not hidden, bool isHidden is changed to true
+		// and the gun model components are no longer rendered on the screen
+
 		if (isHidden) {
 			GameObject gun = GameObject.FindGameObjectWithTag ("Gun");
 			Renderer[] renderers = gun.GetComponentsInChildren<Renderer> ();
@@ -42,7 +52,9 @@ public class Gun : MonoBehaviour {
 	}
 	
 	void Update () {
-		// Fire if the left mouse button is clicked
+		// Checks for Fire or GunEquip inputs from the player
+		// If the gun model is currently not hidden, and the Fire input is made, the gun fires
+
 		if (Input.GetButtonDown("GunEquip")) {			
 			EquipUnequipGun();
 		}
