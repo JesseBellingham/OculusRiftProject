@@ -24,14 +24,17 @@ public class Respawn : MonoBehaviour {
 		Renderer renderer = this.GetComponent<Renderer> ();
 
 
-		if (player.transform.localPosition.y <= -50){
-			player.transform.position = playerStartPosition;
-			startTime = Time.time;
+		if ((player.transform.localPosition.y <= -300) && (Application.loadedLevelName != "ayylmao")){
+			//player.transform.position = playerStartPosition;
+			/*startTime = Time.time;
 
 			if (Time.time - startTime >= 5){
 				renderer.enabled = isHidden;
 			}
 			renderer.enabled = !isHidden;
+			*/
+
+			Application.LoadLevel("ayylmao");
 		}
 	}
 }

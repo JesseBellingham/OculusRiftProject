@@ -3,18 +3,16 @@ using System.Collections;
 
 public class PlanetGravity : MonoBehaviour {
 
-	GameObject planet;
-	GameObject player;
-	float gravitationalAcceleration = 5.0f;
-	// Use this for initialization
-	void Start () {
-		planet = GameObject.FindGameObjectWithTag("Planet");
+	public float pullRadius = 1000;
+	public float pullForce = 50;
 	
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-		Rigidbody rigidbody = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
-		rigidbody.velocity += gravitationalAcceleration * Time.fixedTime * (planet.transform.position - transform.position);
+	void FixedUpdate() {
+		foreach (Collider collider in Physics.OverlapSphere(transform.position, pullRadius)) {
+			// calculate direction from target to me
+			Vector3 forceDirection = transform.position - collider.transform.position;
+			
+			// apply force on target towards me
+			collider.GetComponent<Rigidbody>().AddForce(forceDirection.normalized * pullForce * Time.fixedDeltaTime);
+		}
 	}
 }
