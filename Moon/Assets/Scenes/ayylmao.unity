@@ -277,7 +277,7 @@ Prefab:
     - {fileID: 13542462, guid: ba6d00760bb90354e8c9c589e02d8626, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ba6d00760bb90354e8c9c589e02d8626, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1069153236
+--- !u!1 &1069153236 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 189528, guid: ba6d00760bb90354e8c9c589e02d8626, type: 2}
   m_PrefabInternal: {fileID: 932596322}
@@ -324,7 +324,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0615cc57acbfc0a4aa3187f42328a784, type: 2}
+  - {fileID: 2100000, guid: 9d52fcdf9a0231440904e91a501389c7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
