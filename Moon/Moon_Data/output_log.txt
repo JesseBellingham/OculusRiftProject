@@ -19,23 +19,33 @@ Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moo
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.050 seconds
+- Completed reload, in  0.046 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.dll (this message is harmless)
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1150 -> priority: 1 
-  Thread -> id: ba0 -> priority: 1 
-Ouch! Fell 12.79281 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Ouch! Fell 33.15191 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
+  Thread -> id: 388 -> priority: 1 
+  Thread -> id: 790 -> priority: 1 

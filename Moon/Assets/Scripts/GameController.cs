@@ -11,27 +11,57 @@ public class GameController : MonoBehaviour {
 		// Renderer for the respawn text is enabled on scene start
 		// Coroutine is started which waits 5 seconds before executing the subsequent code
 
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		GameObject text = GameObject.FindGameObjectWithTag("RespawnText");
-		Renderer renderer = text.GetComponent<Renderer> ();		
+		//GameObject monolith = GameObject.FindGameObjectWithTag("Monolith");
+				
+		//Woah woah = monolith.GetComponent<Woah> ();
 
-		renderer.enabled = isHidden;
-
-		StartCoroutine (WaitAndStopRender (5f));
+		//respawnRenderer.enabled = !isHidden;
+		//monolithRenderer.enabled = !isHidden;
+		StartCoroutine (CheckTextDisplay (1f));		
 	}
 
-	IEnumerator WaitAndStopRender(float waitTime){
+	IEnumerator WaitAndStopRespawnRender(float waitTime){
 		// Coroutine waits for waitTime seconds and then disables the renderer for the respawn text
 
 		yield return new WaitForSeconds (waitTime);
-
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
-		GameObject text = GameObject.FindGameObjectWithTag("RespawnText");
+			
+		//GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		GameObject text = GameObject.FindGameObjectWithTag ("RespawnText");
 		Renderer renderer = text.GetComponent<Renderer> ();
-
+			
 		renderer.enabled = !isHidden;
 	}
-	
+
+	IEnumerator WaitAndStopMonolithRender(float waitTime){
+		// Coroutine waits for waitTime seconds and then disables the renderer for the monolith text
+		
+		yield return new WaitForSeconds (waitTime);
+		
+		//GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		GameObject text = GameObject.FindGameObjectWithTag ("MonolithText");
+		Renderer renderer = text.GetComponent<Renderer> ();
+		
+		renderer.enabled = !isHidden;
+	}
+
+	IEnumerator CheckTextDisplay(float waitTime){
+		yield return new WaitForSeconds (waitTime);
+
+		GameObject player = GameObject.FindGameObjectWithTag("Player");
+		GameObject respawnText = GameObject.FindGameObjectWithTag("RespawnText");
+		GameObject monolithText = GameObject.FindGameObjectWithTag("MonolithText");
+		Renderer monolithRenderer = monolithText.GetComponent<Renderer> ();
+		Renderer respawnRenderer = respawnText.GetComponent<Renderer> ();
+
+		if (Woah.GetFoundMonolith ()) {
+			monolithRenderer.enabled = isHidden;
+			StartCoroutine(WaitAndStopMonolithRender (5f));
+		} else {
+			respawnRenderer.enabled = isHidden;
+			StartCoroutine (WaitAndStopRespawnRender (5f));
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 	

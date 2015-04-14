@@ -12,7 +12,9 @@ public class PlanetGravity : MonoBehaviour {
 			Vector3 forceDirection = transform.position - collider.transform.position;
 			
 			// apply force on target towards me
-			collider.GetComponent<Rigidbody>().AddForce(forceDirection.normalized * pullForce * Time.fixedDeltaTime);
+			if (collider.GetComponent<Rigidbody>() != null){
+				collider.GetComponent<Rigidbody>().AddForce(forceDirection.normalized * pullForce * Time.fixedDeltaTime);
+			}
 		}
 	}
 }

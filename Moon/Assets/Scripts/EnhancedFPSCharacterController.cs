@@ -45,7 +45,6 @@ public class EnhancedFPSCharacterController : MonoBehaviour {
 	private float rayDistance;
 	private Vector3 contactPoint;
 	private bool playerControl = false;
-	private bool playerFell = false;
 	private int jumpTimer;
 	
 	void Start() {
