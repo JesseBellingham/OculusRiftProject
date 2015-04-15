@@ -13,7 +13,7 @@ public class PlanetGravity : MonoBehaviour {
 			
 			// apply force on target towards me
 			if (collider.GetComponent<Rigidbody>() != null){
-				collider.GetComponent<Rigidbody>().AddForce(forceDirection.normalized * pullForce * Time.fixedDeltaTime);
+				collider.GetComponent<Rigidbody>().AddForce(forceDirection.normalized * pullForce * Time.fixedDeltaTime);                
 			}
 		}
 	}

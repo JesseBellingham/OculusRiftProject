@@ -17,6 +17,8 @@ TagManager:
   - Planet
   - MonolithText
   - Monolith
+  - HoverpadText
+  - Hoverpad
   layers:
   - Default
   - TransparentFX
