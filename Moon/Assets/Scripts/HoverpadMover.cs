@@ -36,11 +36,11 @@ public class HoverpadMover : MonoBehaviour
         //controller.Move(moveDirection * Time.deltaTime);
         controller.Move(moveDirection);
         //controller.Move((inputVec + Vector3.up + new Vector3(0, verticalVelocity, 0)) * Time.deltaTime);
-        //this.GetComponent<Rigidbody>().AddForce(x, verticalVelocity, z, ForceMode.Force);
+        //this.GetComponent<Rigidbody>().AddForce(x, verticalVelocity, z, ForceMode.Force);        
 
         if (inputVec != Vector3.zero)
         {
-            if ((Input.GetButton("Mouse X")) || Input.GetButton("a") || Input.GetButton("d"))
+            if (Input.GetButton("a"))
             {
                 //transform.RotateAround(target.transform, Input.GetAxisRaw("Mouse X"), 
             }
