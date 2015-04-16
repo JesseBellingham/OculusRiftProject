@@ -22,32 +22,25 @@ public class HoverpadMover : MonoBehaviour
     float UpdateMovement()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-
-        float x = Input.GetAxis("Horizontal");
+        GameObject hoverpad = GameObject.FindGameObjectWithTag("Hoverpad");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 inputVec = new Vector3(x, verticalVelocity, z);
-        //inputVec *= moveSpeed;
+        Vector3 inputVec = new Vector3(0, verticalVelocity, z);
 
         moveDirection = new Vector3(-inputVec.x, inputVec.y, -inputVec.z);
         moveDirection = transform.TransformDirection(moveDirection);
 
         moveDirection *= moveSpeed;
-        //controller.Move(moveDirection * Time.deltaTime);
         controller.Move(moveDirection);
-        //controller.Move((inputVec + Vector3.up + new Vector3(0, verticalVelocity, 0)) * Time.deltaTime);
-        //this.GetComponent<Rigidbody>().AddForce(x, verticalVelocity, z, ForceMode.Force);        
-
-        if (inputVec != Vector3.zero)
+        
+        if (Input.GetButton("HoverpadRotateLeft"))
         {
-            if (Input.GetButton("a"))
-            {
-                //transform.RotateAround(target.transform, Input.GetAxisRaw("Mouse X"), 
-            }
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(inputVec), Time.deltaTime * rotationDamping);
-            //transform.rotation.x = player.transform.rotation.x;
+            hoverpad.transform.Rotate(0, -((moveSpeed * 30)* Time.deltaTime), 0);
         }
-
+        else if (Input.GetButton("HoverpadRotateRight"))
+        {
+            hoverpad.transform.Rotate(0, ((moveSpeed * 30) * Time.deltaTime), 0);
+        }
         return inputVec.magnitude;
     }
 

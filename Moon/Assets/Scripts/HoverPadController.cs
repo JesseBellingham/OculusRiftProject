@@ -3,6 +3,8 @@ using System.Collections;
 
 public class HoverPadController : MonoBehaviour {
 
+    bool playerFlying = false;
+
 	// Use this for initialization
 	void Start () {
         
@@ -10,8 +12,24 @@ public class HoverPadController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
 
+        TextRender();
+
+        if (playerFlying)
+        {
+            if (Input.GetButton("HoverpadExit"))
+            {
+                player.GetComponent<EnhancedFPSCharacterController>().enabled = true;
+                this.GetComponent<HoverpadMover>().enabled = false;
+                this.GetComponent<CharacterController>().enabled = false;
+                this.GetComponent<Rigidbody>().useGravity = true;
+                this.GetComponent<Rigidbody>().isKinematic = false;
+                player.transform.position = this.transform.localPosition;
+                player.transform.parent = null;
+                playerFlying = false;
+            }
+        }        
 	}
 
     void OnTriggerEnter(Collider collider)
@@ -29,9 +47,7 @@ public class HoverPadController : MonoBehaviour {
     void OnTriggerStay(Collider collider)
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        GameObject hoverpad = GameObject.FindGameObjectWithTag("Hoverpad");
-        GameObject text = GameObject.FindGameObjectWithTag("HoverpadText");
-        Renderer textRenderer = text.GetComponent<Renderer>();
+        GameObject hoverpad = GameObject.FindGameObjectWithTag("Hoverpad");        
 
         if (collider.gameObject.tag == "Player")
         {         
@@ -40,9 +56,10 @@ public class HoverPadController : MonoBehaviour {
                 player.GetComponent<EnhancedFPSCharacterController>().enabled = false;
                 this.GetComponent<HoverpadMover>().enabled = true;
                 this.GetComponent<CharacterController>().enabled = true;
+                this.GetComponent<Rigidbody>().useGravity = false;
+                this.GetComponent<Rigidbody>().isKinematic = true;
                 player.transform.parent = GameObject.FindGameObjectWithTag("Hoverpad").transform;
-
-                textRenderer.enabled = false;
+                playerFlying = true;                
             }
         }
     }
@@ -53,5 +70,16 @@ public class HoverPadController : MonoBehaviour {
         Renderer textRenderer = text.GetComponent<Renderer>();
 
         textRenderer.enabled = false;
+    }
+
+    void TextRender()
+    {
+        if (playerFlying)
+        {
+            GameObject text = GameObject.FindGameObjectWithTag("HoverpadText");
+            Renderer textRenderer = text.GetComponent<Renderer>();
+
+            textRenderer.enabled = false;
+        }
     }
 }
