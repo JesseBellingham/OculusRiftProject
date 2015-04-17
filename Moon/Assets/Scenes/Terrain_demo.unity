@@ -220,7 +220,7 @@ GameObject:
   - 33: {fileID: 175290651}
   - 135: {fileID: 175290650}
   - 23: {fileID: 175290649}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   - 23: {fileID: 345071646}
   - 102: {fileID: 345071645}
   - 114: {fileID: 345071644}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: text_Monolith
   m_TagString: MonolithText
   m_Icon: {fileID: 0}
@@ -772,7 +772,7 @@ GameObject:
   - 82: {fileID: 529581959}
   - 81: {fileID: 529581964}
   - 136: {fileID: 529581965}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1022,7 +1022,7 @@ GameObject:
   - 33: {fileID: 739838419}
   - 136: {fileID: 739838418}
   - 23: {fileID: 739838417}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1892,7 +1892,7 @@ GameObject:
   - 23: {fileID: 1267110629}
   - 102: {fileID: 1267110628}
   - 114: {fileID: 1267110630}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: text_Respawn
   m_TagString: RespawnText
   m_Icon: {fileID: 0}
@@ -2435,6 +2435,30 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 168682, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 159718, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 2}
@@ -2513,6 +2537,14 @@ Prefab:
     - target: {fileID: 11169428, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
       propertyPath: m_AnimatePhysics
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 154038, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 152638, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
@@ -2997,6 +3029,22 @@ Prefab:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5471118, guid: 516203ea3ce28cc468ec1b8b3e391812, type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471118, guid: 516203ea3ce28cc468ec1b8b3e391812, type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 150486, guid: 516203ea3ce28cc468ec1b8b3e391812, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 152652, guid: 516203ea3ce28cc468ec1b8b3e391812, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 516203ea3ce28cc468ec1b8b3e391812, type: 2}
   m_IsPrefabParent: 0
@@ -3011,7 +3059,7 @@ GameObject:
   - 23: {fileID: 1722631494}
   - 102: {fileID: 1722631493}
   - 114: {fileID: 1722631492}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: text_HoverpadEnter
   m_TagString: HoverpadText
   m_Icon: {fileID: 0}

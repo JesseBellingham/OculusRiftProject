@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HoverPadController : MonoBehaviour {
 
-    bool playerFlying = false;
+    public static bool playerFlying = false;
 
 	// Use this for initialization
 	void Start () {
@@ -14,22 +14,7 @@ public class HoverPadController : MonoBehaviour {
 	void Update () {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-        TextRender();
-
-        if (playerFlying)
-        {
-            if (Input.GetButton("HoverpadExit"))
-            {
-                player.GetComponent<EnhancedFPSCharacterController>().enabled = true;
-                this.GetComponent<HoverpadMover>().enabled = false;
-                this.GetComponent<CharacterController>().enabled = false;
-                this.GetComponent<Rigidbody>().useGravity = true;
-                this.GetComponent<Rigidbody>().isKinematic = false;
-                player.transform.position = this.transform.localPosition;
-                player.transform.parent = null;
-                playerFlying = false;
-            }
-        }        
+        TextRender();                
 	}
 
     void OnTriggerEnter(Collider collider)

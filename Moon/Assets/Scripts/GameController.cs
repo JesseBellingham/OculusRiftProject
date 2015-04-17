@@ -10,13 +10,7 @@ public class GameController : MonoBehaviour {
 	void Start () {
 		// Renderer for the respawn text is enabled on scene start
 		// Coroutine is started which waits 5 seconds before executing the subsequent code
-
-		//GameObject monolith = GameObject.FindGameObjectWithTag("Monolith");
-				
-		//Woah woah = monolith.GetComponent<Woah> ();
-
-		//respawnRenderer.enabled = !isHidden;
-		//monolithRenderer.enabled = !isHidden;
+		
 		StartCoroutine (CheckTextDisplay (1f));		
 	}
 
