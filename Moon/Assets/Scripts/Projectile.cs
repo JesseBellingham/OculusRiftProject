@@ -9,14 +9,13 @@ public class Projectile : MonoBehaviour {
 
 	private float startTime; 
 	
-	void Start () {
-		// Applies forward force based on the projectile's mass, still having the projectile be affected by gravity
+	void Start () {		
 
 		startTime = Time.time;
 
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		Rigidbody proj = projectile.GetComponent<Rigidbody>();
-		proj.AddForce (player.transform.forward * speed, ForceMode.Impulse);
+        proj.AddForce(player.transform.forward * speed, ForceMode.Impulse);    // Applies forward force based on the projectile's mass, still having the projectile be affected by gravity
 	} 
 	
 	// Update is called once per frame

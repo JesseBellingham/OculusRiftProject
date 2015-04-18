@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameController : MonoBehaviour {
+public class SecretRoomController : MonoBehaviour {
 
 	bool isHidden = true;
 	float startTime;
 
-	// Use this for initialization
 	void Start () {
-		// Renderer for the respawn text is enabled on scene start
-		// Coroutine is started which waits 5 seconds before executing the subsequent code
+		// CheckTextDisplay selects which renderer for the respawn text is enabled on scene start
+		// Coroutine is started which waits 1 second before executing the subsequent code
 		
 		StartCoroutine (CheckTextDisplay (1f));		
 	}
@@ -18,8 +17,7 @@ public class GameController : MonoBehaviour {
 		// Coroutine waits for waitTime seconds and then disables the renderer for the respawn text
 
 		yield return new WaitForSeconds (waitTime);
-			
-		//GameObject player = GameObject.FindGameObjectWithTag ("Player");
+		
 		GameObject text = GameObject.FindGameObjectWithTag ("RespawnText");
 		Renderer renderer = text.GetComponent<Renderer> ();
 			
@@ -31,7 +29,6 @@ public class GameController : MonoBehaviour {
 		
 		yield return new WaitForSeconds (waitTime);
 		
-		//GameObject player = GameObject.FindGameObjectWithTag ("Player");
 		GameObject text = GameObject.FindGameObjectWithTag ("MonolithText");
 		Renderer renderer = text.GetComponent<Renderer> ();
 		
@@ -39,25 +36,23 @@ public class GameController : MonoBehaviour {
 	}
 
 	IEnumerator CheckTextDisplay(float waitTime){
+        // Coroutine waits for waitTime seconds
+
 		yield return new WaitForSeconds (waitTime);
 
-		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		GameObject respawnText = GameObject.FindGameObjectWithTag("RespawnText");
 		GameObject monolithText = GameObject.FindGameObjectWithTag("MonolithText");
 		Renderer monolithRenderer = monolithText.GetComponent<Renderer> ();
 		Renderer respawnRenderer = respawnText.GetComponent<Renderer> ();
 
 		if (Woah.GetFoundMonolith ()) {
+            // If the player has found the Monolith, render MonolithText and then start the coroutine to stop the renderer
 			monolithRenderer.enabled = isHidden;
 			StartCoroutine(WaitAndStopMonolithRender (5f));
 		} else {
+            // If the player is respawned any other way, render RespawnText and then start the coroutine to stop the renderer
 			respawnRenderer.enabled = isHidden;
 			StartCoroutine (WaitAndStopRespawnRender (5f));
 		}
-	}
-
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	}	
 }

@@ -239,7 +239,7 @@ Transform:
   m_Children:
   - {fileID: 1502021015}
   m_Father: {fileID: 837300504}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!23 &175290649
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -283,6 +283,80 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175290647}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &205977026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 205977027}
+  - 23: {fileID: 205977030}
+  - 102: {fileID: 205977029}
+  m_Layer: 10
+  m_Name: text_HoverpadExit
+  m_TagString: HoverpadExitText
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &205977027
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205977026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.61999989, z: 9.98998928}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 837300504}
+  m_RootOrder: 0
+--- !u!102 &205977029
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205977026}
+  m_Text: Press "G" to land the hoverpad
+  m_OffsetZ: 0
+  m_CharacterSize: .5
+  m_LineSpacing: 1
+  m_Anchor: 1
+  m_Alignment: 0
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &205977030
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205977026}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!1 &233083752
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +621,6 @@ GameObject:
   - 4: {fileID: 345071643}
   - 23: {fileID: 345071646}
   - 102: {fileID: 345071645}
-  - 114: {fileID: 345071644}
   m_Layer: 10
   m_Name: text_Monolith
   m_TagString: MonolithText
@@ -566,18 +639,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837300504}
-  m_RootOrder: 2
---- !u!114 &345071644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 345071642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763efef23512d0d4989df8e0a84979e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_RootOrder: 3
 --- !u!102 &345071645
 TextMesh:
   serializedVersion: 3
@@ -605,7 +667,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 345071642}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
@@ -1084,7 +1146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837300504}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &761723305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1302,7 @@ Transform:
   m_LocalPosition: {x: 512, y: 4.39900017, z: 512}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 205977027}
   - {fileID: 1722631491}
   - {fileID: 1267110627}
   - {fileID: 345071643}
@@ -1891,7 +1954,6 @@ GameObject:
   - 4: {fileID: 1267110627}
   - 23: {fileID: 1267110629}
   - 102: {fileID: 1267110628}
-  - 114: {fileID: 1267110630}
   m_Layer: 10
   m_Name: text_Respawn
   m_TagString: RespawnText
@@ -1910,7 +1972,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837300504}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!102 &1267110628
 TextMesh:
   serializedVersion: 3
@@ -1938,7 +2000,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1267110626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:
@@ -1956,17 +2018,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!114 &1267110630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1267110626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763efef23512d0d4989df8e0a84979e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1333253412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,7 +2555,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447852, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11408092, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
       propertyPath: projectile
@@ -3058,10 +3109,9 @@ GameObject:
   - 4: {fileID: 1722631491}
   - 23: {fileID: 1722631494}
   - 102: {fileID: 1722631493}
-  - 114: {fileID: 1722631492}
   m_Layer: 10
   m_Name: text_HoverpadEnter
-  m_TagString: HoverpadText
+  m_TagString: HoverpadEnterText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3077,18 +3127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837300504}
-  m_RootOrder: 0
---- !u!114 &1722631492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1722631490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763efef23512d0d4989df8e0a84979e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_RootOrder: 1
 --- !u!102 &1722631493
 TextMesh:
   serializedVersion: 3
@@ -3116,7 +3155,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1722631490}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_Materials:

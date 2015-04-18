@@ -7,8 +7,6 @@ public class AsteroidRandomRotation : MonoBehaviour {
 
 	// Start runs once when the script is initiated
 	void Start () {
-		// Applies random rotation to the created asteroid
-
-		GetComponent<Rigidbody> ().angularVelocity = Random.insideUnitSphere * tumble;
+        GetComponent<Rigidbody>().angularVelocity = Random.insideUnitSphere * tumble;  // Applies random rotation to the created asteroid
 	}
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine; using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 
 // Require a character controller to be attached to the same game object 
 [RequireComponent(typeof(CharacterController))]
@@ -6,7 +7,7 @@
 public class HoverpadMover : MonoBehaviour
 {
     public float moveSpeed;
-    public float rotationDamping = 20f;
+    //public float rotationDamping = 20f;
 
     float verticalVelocity;
     Vector3 moveDirection = Vector3.zero;
@@ -18,29 +19,31 @@ public class HoverpadMover : MonoBehaviour
         controller = (CharacterController)GetComponent(typeof(CharacterController));
     }
 
-    float UpdateMovement()
+    void UpdateMovement()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject hoverpad = GameObject.FindGameObjectWithTag("Hoverpad");
-        float z = Input.GetAxis("Vertical");
 
-        Vector3 inputVec = new Vector3(0, verticalVelocity, z);
+        float z = Input.GetAxis("Vertical");    // Due to the hoverpad model's axes orientation, the z axis is assigned to forward and backward motion
 
-        moveDirection = new Vector3(-inputVec.x, inputVec.y, -inputVec.z);
+        Vector3 inputVec = new Vector3(0, verticalVelocity, z); // inputVec gathers all current movement inputs into a single Vector3
+
+        moveDirection = new Vector3(-inputVec.x, inputVec.y, -inputVec.z);  // Inverts axes to correspond to the player's orientation
         moveDirection = transform.TransformDirection(moveDirection);
 
-        moveDirection *= moveSpeed;
+        moveDirection *= moveSpeed; // Increases the speed of motion by a factor of moveSpeed
         controller.Move(moveDirection);
         
         if (Input.GetButton("HoverpadRotateLeft"))
         {
-            hoverpad.transform.Rotate(0, -((moveSpeed * 30)* Time.deltaTime), 0);
+            // Input.GetButton gets held down keys -- this code block runs as long as the HoverpadRotateLeft key is held down
+
+            hoverpad.transform.Rotate(0, -((moveSpeed * 30)* Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
         }
         else if (Input.GetButton("HoverpadRotateRight"))
         {
             hoverpad.transform.Rotate(0, ((moveSpeed * 30) * Time.deltaTime), 0);
         }
-        return inputVec.magnitude;
     }
 
     void Update()
@@ -49,65 +52,51 @@ public class HoverpadMover : MonoBehaviour
         {
             if (Input.GetButtonDown("HoverpadExit"))
             {
-                /*
-                 * GameObject player = GameObject.FindGameObjectWithTag("Player");
-                player.GetComponent<EnhancedFPSCharacterController>().enabled = true;
-                this.GetComponent<HoverpadMover>().enabled = false;
-                this.GetComponent<CharacterController>().enabled = false;
-                this.GetComponent<Rigidbody>().useGravity = true;
-                this.GetComponent<Rigidbody>().isKinematic = false;
-                player.transform.position = this.transform.localPosition;
-                player.transform.parent = null;
-                HoverPadController.playerFlying = false;
-                 * 
-                 */
+                StartCoroutine(HoverpadLand(0.016f)); 
+            }
 
-                StartCoroutine(HoverpadLand(0.016f));                
-            }            
-        }
-
-        if (HoverPadController.playerFlying == true)
-        {
             if (Input.GetButton("HoverpadUp"))
             {
                 verticalVelocity = moveSpeed;
-                moveDirection = new Vector3(0, verticalVelocity, 0);
-                UpdateMovement();
+                UpdateMovement();   // Runs UpdateMovement with upwards vertical movement included
             }
             else if (Input.GetButton("HoverpadDown"))
             {
                 verticalVelocity = -moveSpeed;
-                moveDirection = new Vector3(0, verticalVelocity, 0);
-                UpdateMovement();
+                UpdateMovement();   // Runs UpdateMovement with downwards vertical movement included            
             }
 
             verticalVelocity = 0;
-            UpdateMovement();
-        }        
+            UpdateMovement();   // Runs UpdateMovement with no vertical movement included            
+        }               
     }
 
     IEnumerator HoverpadLand(float waitTime)
     {
         HoverPadController.playerFlying = false;
 
-        while ((controller.collisionFlags & CollisionFlags.Below) == 0)
+        while ((controller.collisionFlags & CollisionFlags.Below) == 0) // While there have not been any collisions on the underside of the hoverpad
         {
             verticalVelocity = -moveSpeed;
-            moveDirection = new Vector3(0, verticalVelocity, 0);
-            UpdateMovement();
-            yield return new WaitForSeconds(waitTime);
+            UpdateMovement();   // Runs UpdateMovement with downwards vertical movement included
+            yield return new WaitForSeconds(waitTime);  // Waits the aproximate time that each frame takes to display 
+            // (without this line, the coroutine is simply run as fast as the computer can process it, so the hoverpad goes from air to ground within the span of a single frame)
         }        
         SetPlayerWalking();
     }
 
     private void SetPlayerWalking()
     {
+        // Sets all the Player model components that allow movement
+        // Disables hoverpad components that allow movement
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         
         player.GetComponent<EnhancedFPSCharacterController>().enabled = true;
         this.GetComponent<HoverpadMover>().enabled = false;
         this.GetComponent<CharacterController>().enabled = false;
-        this.transform.position = new Vector3(this.transform.localPosition.x, this.transform.localPosition.y - 3, this.transform.localPosition.z);
-        player.transform.parent = null;
+        this.transform.position = new Vector3(this.transform.localPosition.x, 
+            this.transform.localPosition.y - 3, this.transform.localPosition.z); // One of the components on the hoverpad prevents it from properly reaching the ground when it is landed
+            // My workaround was to simply alter the hoverpad's Y position when the player steps off
+        player.transform.parent = null; // Sets the Player model to no longer be a child of the hoverpad
     }
 }

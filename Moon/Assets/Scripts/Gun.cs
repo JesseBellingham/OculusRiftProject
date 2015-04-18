@@ -7,13 +7,14 @@ public class Gun : MonoBehaviour {
 	public bool isHidden = true;
 
 	void Start(){
-		// On application start, an array is made of all the renderers of each of the gun models components
-		// Each component in the model is set to not render when the player first spawns in
+		// On application start, an array is made of all the renderers of each of the gun models components		
 
 		GameObject gun = GameObject.FindGameObjectWithTag("Gun");
 		Renderer[] renderers = gun.GetComponentsInChildren<Renderer>();
 
 		foreach (Renderer r in renderers) {
+            // Each component in the model is set to not render when the player first spawns in
+
 			r.enabled = !isHidden;
 		}
 	}
@@ -27,12 +28,13 @@ public class Gun : MonoBehaviour {
 
 	void EquipUnequipGun(){
 		// Runs on button press -- checks if the model isHidden or not
-		// If the model is hidden, bool isHidden is changed to false
-		// and the gun model components are rendered on the screen
-		// If the model is not hidden, bool isHidden is changed to true
-		// and the gun model components are no longer rendered on the screen
+		
+		
 
 		if (isHidden) {
+            // If the model is hidden, bool isHidden is changed to false
+            // and the gun model components are rendered on the screen
+
 			GameObject gun = GameObject.FindGameObjectWithTag ("Gun");
 			Renderer[] renderers = gun.GetComponentsInChildren<Renderer> ();
 			isHidden = false;
@@ -41,6 +43,9 @@ public class Gun : MonoBehaviour {
 				r.enabled = !isHidden;
 			}
 		} else {
+            // If the model is not hidden, bool isHidden is changed to true
+            // and the gun model components are no longer rendered on the screen
+
 			GameObject gun = GameObject.FindGameObjectWithTag ("Gun");
 			Renderer[] renderers = gun.GetComponentsInChildren<Renderer> ();
 			isHidden = true;
@@ -52,14 +57,15 @@ public class Gun : MonoBehaviour {
 	}
 	
 	void Update () {
-		// Checks for Fire or GunEquip inputs from the player
-		// If the gun model is currently not hidden, and the Fire input is made, the gun fires
+		// Checks for Fire or GunEquip inputs from the player		
 
 		if (Input.GetButtonDown("GunEquip")) {			
 			EquipUnequipGun();
 		}
 
-		if ((!isHidden) && (Input.GetButtonDown("Fire1"))) {
+		if ((!isHidden) && (Input.GetButtonDown("Fire"))) {
+            // If the gun model is currently not hidden, and the Fire input is made, the gun fires
+
 			Fire();
 		} 
 	}
