@@ -20,6 +20,9 @@ TagManager:
   - HoverpadEnterText
   - Hoverpad
   - HoverpadExitText
+  - Lander
+  - LanderEnterText
+  - LanderExitText
   layers:
   - Default
   - TransparentFX

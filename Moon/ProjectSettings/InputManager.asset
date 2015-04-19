@@ -246,7 +246,7 @@ InputManager:
     axis: 4
     joyNum: 0
   - serializedVersion: 3
-    m_Name: HoverpadEnter
+    m_Name: VehicleEnter
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -294,7 +294,7 @@ InputManager:
     axis: 4
     joyNum: 0
   - serializedVersion: 3
-    m_Name: HoverpadRotateLeft
+    m_Name: VehicleRotateLeft
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -310,7 +310,7 @@ InputManager:
     axis: 4
     joyNum: 0
   - serializedVersion: 3
-    m_Name: HoverpadRotateRight
+    m_Name: VehicleRotateRight
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -326,7 +326,7 @@ InputManager:
     axis: 4
     joyNum: 0
   - serializedVersion: 3
-    m_Name: HoverpadExit
+    m_Name: VehicleExit
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 

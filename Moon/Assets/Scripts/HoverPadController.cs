@@ -43,8 +43,8 @@ public class HoverPadController : MonoBehaviour {
         // Checks that the external collider is that of the Player
         if (collider.gameObject.tag == "Player")
         {
-            // Checks that the player is not already flying, and has pressed the hoverpad enter button
-            if ((Input.GetButtonDown("HoverpadEnter")) && (!playerFlying))
+            // Checks that the player is not already flying, and has pressed the vehicle enter button
+            if ((Input.GetButtonDown("VehicleEnter")) && (!playerFlying))
             {         
                 player.GetComponent<EnhancedFPSCharacterController>().enabled = false;  // Disables the character controller component on the Player model
                 this.GetComponent<HoverpadMover>().enabled = true;                      // Enables movement oriented components on the hoverpad model
