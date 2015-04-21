@@ -7,7 +7,12 @@ using System.Collections;
 public class HoverpadMover : MonoBehaviour
 {
     public float moveSpeed;
+	public float gamepadRotateSpeed;
     //public float rotationDamping = 20f;
+	public Vector2 sensitivity = new Vector2(2, 2);
+	public Vector2 smoothing = new Vector2(3, 3);
+
+	Vector2 smoothMouse;
 
     float verticalVelocity;
     Vector3 moveDirection = Vector3.zero;
@@ -24,6 +29,15 @@ public class HoverpadMover : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject hoverpad = GameObject.FindGameObjectWithTag("Hoverpad");
 
+		// Get raw mouse input for a cleaner reading on more sensitive mice.
+		Vector2 mouseDelta = new Vector2(0, Input.GetAxisRaw("Mouse X"));
+		
+		// Scale input against the sensitivity setting and multiply that against the smoothing value.
+		mouseDelta = Vector2.Scale(mouseDelta, new Vector2(sensitivity.x * smoothing.x, sensitivity.y * smoothing.y));
+		smoothMouse.x = Mathf.Lerp(smoothMouse.x, mouseDelta.x, 1f / smoothing.x);
+
+		mouseDelta += smoothMouse;
+
         float z = Input.GetAxis("Vertical");    // Due to the hoverpad model's axes orientation, the z axis is assigned to forward and backward motion
 
         Vector3 inputVec = new Vector3(0, verticalVelocity, z); // inputVec gathers all current movement inputs into a single Vector3
@@ -34,20 +48,24 @@ public class HoverpadMover : MonoBehaviour
         moveDirection *= moveSpeed; // Increases the speed of motion by a factor of moveSpeed
         controller.Move(moveDirection);
         
-        if (Input.GetButton("VehicleRotateLeft"))
-        {
-            // Input.GetButton gets held down keys -- this code block runs as long as the HoverpadRotateLeft key is held down
+        if (Input.GetButton ("VehicleRotateLeft")) {
+			// Input.GetButton gets held down keys -- this code block runs as long as the HoverpadRotateLeft key is held down
 
-            hoverpad.transform.Rotate(0, -((moveSpeed * 30)* Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
-        }
-        else if (Input.GetButton("VehicleRotateRight"))
-        {
-            hoverpad.transform.Rotate(0, ((moveSpeed * 30) * Time.deltaTime), 0);
-        }
+			hoverpad.transform.Rotate (0, -((moveSpeed * 30) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
+		} else if (Input.GetButton ("VehicleRotateRight")) {
+			hoverpad.transform.Rotate (0, ((moveSpeed * 30) * Time.deltaTime), 0);
+		} else if (){
+			//player.GetComponent<SimpleSmoothMouseLook>().enabled = false;
+			//hoverpad.transform.Rotate (mouseDelta);
+			Vector3 rotation = new Vector3(0, player.transform.localRotation.y, 0);
+			hoverpad.transform.Rotate(rotation * gamepadRotateSpeed);
+		}
     }
 
     void Update()
     {
+
+
         if (HoverPadController.playerFlying)
         {
             if (Input.GetButtonDown("VehicleExit"))
@@ -98,5 +116,6 @@ public class HoverpadMover : MonoBehaviour
             this.transform.localPosition.y - 3, this.transform.localPosition.z); // One of the components on the hoverpad prevents it from properly reaching the ground when it is landed
             // My workaround was to simply alter the hoverpad's Y position when the player steps off
         player.transform.parent = null; // Sets the Player model to no longer be a child of the hoverpad
+		//player.GetComponent<SimpleSmoothMouseLook> ().enabled = true;
     }
 }

@@ -22,7 +22,6 @@ public class MonolithAudio : MonoBehaviour {
                 yield return new WaitForSeconds(0.1f); // this will adjust the volume based on distance every 0.1 second
 				
 			}
-		}
-		
+		}		
 	}
 }
