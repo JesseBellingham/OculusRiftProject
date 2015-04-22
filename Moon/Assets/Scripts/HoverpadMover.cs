@@ -54,12 +54,12 @@ public class HoverpadMover : MonoBehaviour
 			hoverpad.transform.Rotate (0, -((moveSpeed * 30) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
 		} else if (Input.GetButton ("VehicleRotateRight")) {
 			hoverpad.transform.Rotate (0, ((moveSpeed * 30) * Time.deltaTime), 0);
-		} else if (){
+		} /*else if (){
 			//player.GetComponent<SimpleSmoothMouseLook>().enabled = false;
 			//hoverpad.transform.Rotate (mouseDelta);
 			Vector3 rotation = new Vector3(0, player.transform.localRotation.y, 0);
 			hoverpad.transform.Rotate(rotation * gamepadRotateSpeed);
-		}
+		}*/
     }
 
     void Update()
