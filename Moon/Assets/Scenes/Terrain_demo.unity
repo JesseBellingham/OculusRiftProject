@@ -836,6 +836,7 @@ GameObject:
   - 82: {fileID: 529581959}
   - 81: {fileID: 529581964}
   - 136: {fileID: 529581965}
+  - 114: {fileID: 529581966}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -1017,6 +1018,20 @@ CapsuleCollider:
   m_Height: 1.79999995
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &529581966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529581957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cab3bba577357944786c5800b3bf1e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 529581957}
+  refTerrain: {fileID: 2109591847}
+  spread: 2
 --- !u!4 &704345474
 Transform:
   m_PrefabParentObject: {fileID: 466344, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
