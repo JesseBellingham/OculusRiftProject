@@ -26,4 +26,19 @@ public class Projectile : MonoBehaviour {
 			Destroy(this.gameObject);
 		} 
 	}
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Vector3 location = collision.transform.localPosition;
+        ProjectileExplosion(location);
+    }
+
+    void ProjectileExplosion(Vector3 location)
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            Quaternion rotation = new Quaternion(Random.Range(0, 360), Random.Range(0, 360), Random.Range(90, 270), 0);
+            GameObject cloneProjectile = Instantiate(projectile, location, rotation) as GameObject;
+        }        
+    }
 }
