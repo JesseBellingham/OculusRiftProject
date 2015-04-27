@@ -79,6 +79,7 @@ Rigidbody:
   m_Constraints: 0
   m_CollisionDetection: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!96 &9658924
 TrailRenderer:
   m_ObjectHideFlags: 1
@@ -124,6 +125,8 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: .100000001
   m_Autodestruct: 0
+=======
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
 =======
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
 --- !u!114 &11472790

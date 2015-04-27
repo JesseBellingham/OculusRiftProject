@@ -27,6 +27,7 @@ public class Projectile : MonoBehaviour {
 		} 
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     void OnCollisionEnter(Collision collision)
     {
@@ -42,6 +43,8 @@ public class Projectile : MonoBehaviour {
             GameObject cloneProjectile = Instantiate(projectile, location, rotation) as GameObject;
         }        
     }
+=======
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
 =======
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
 }
