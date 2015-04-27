@@ -5,7 +5,6 @@ public class Gun : MonoBehaviour {
 
 	public GameObject projectile;
 	public bool isHidden = true;
-    public GameObject projectileSpawn;
 
 	void Start(){
 		// On application start, an array is made of all the renderers of each of the gun models components		
@@ -23,10 +22,8 @@ public class Gun : MonoBehaviour {
 	void Fire () {
 		// Creates a new projectile pointing in the same direction as the gun
 		// Projectile is given motion in the Projectile script
-        
-        Vector3 pos = new Vector3(projectileSpawn.transform.position.x, projectileSpawn.transform.position.y - 1.5f, projectileSpawn.transform.position.z - 0.5f);
-		GameObject cloneProjectile = Instantiate(projectile, pos, this.transform.rotation) as GameObject;
-        //cloneProjectile.transform.SetParent(container.transform, true);
+
+		GameObject cloneProjectile = Instantiate(projectile, transform.position, transform.rotation) as GameObject;
 	}
 
 	void EquipUnequipGun(){

@@ -4,7 +4,7 @@ using Utility;
 
 public class TerrainManager : MonoBehaviour {
 	
-	public GameObject player;
+	public GameObject playerGameObject;
 	public Terrain referenceTerrain;
 	public int TERRAIN_BUFFER_COUNT = 50;
 	public int spread = 1;
@@ -32,21 +32,20 @@ public class TerrainManager : MonoBehaviour {
 		referenceRotation = referenceTerrain.transform.rotation;
 		referenceSize = new Vector2(referenceTerrain.terrainData.size.x, referenceTerrain.terrainData.size.z);
 		
-		for(int i=0; i < TERRAIN_BUFFER_COUNT; i++)
+		for(int i=0; i<TERRAIN_BUFFER_COUNT; i++)
 		{
 			TerrainData tData = new TerrainData();
 			CopyTerrainDataFromTo(referenceTerrain.terrainData, ref tData);
 			terrainBuffer[i] = Terrain.CreateTerrainGameObject(tData).GetComponent<Terrain>();
-			terrainBuffer[i].gameObject.SetActive(false);
+			terrainBuffer[i].gameObject.active = false;
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		ResetTouch();
-		Vector3 warpPosition = player.transform.position;
+		Vector3 warpPosition = playerGameObject.transform.position;
 		TerrainIDFromPosition(ref currentTerrainID, ref warpPosition);
-        print(currentTerrainID.ToString() + ", " + warpPosition.ToString());
 		
 		string dbgString = "";
 		dbgString = "CurrentID : " + currentTerrainID[0] + ", " + currentTerrainID[1] + "\n\n";
@@ -128,7 +127,7 @@ public class TerrainManager : MonoBehaviour {
 				if(usedTiles[i] && !touchedTiles[i])
 				{
 					usedTiles[i] = false;
-					terrainBuffer[i].gameObject.SetActive(false);
+					terrainBuffer[i].gameObject.active = false;
 				}
 			}
 		}
@@ -137,18 +136,18 @@ public class TerrainManager : MonoBehaviour {
 	void ActivateUsedTile(int i, int j)
 	{
 		terrainBuffer[terrainUsage[i, j]].gameObject.transform.position = 
-									new Vector3(referencePosition.x + i * referenceSize.x,
-											    referencePosition.y,
-												referencePosition.z + j * referenceSize.y);
+									new Vector3(  	referencePosition.x + i * referenceSize.x,
+													referencePosition.y,
+													referencePosition.z + j * referenceSize.y);
 		terrainBuffer[terrainUsage[i, j]].gameObject.transform.rotation = referenceRotation;
-        terrainBuffer[terrainUsage[i, j]].gameObject.SetActive(true);
+		terrainBuffer[terrainUsage[i, j]].gameObject.active = true;
 		
 		terrainBuffer[terrainUsage[i, j]].terrainData = terrainUsageData[i, j];
 	}
 	
 	int FindNextAvailableTerrainID()
 	{
-		for(int i = 0; i < usedTiles.Length;i++)
+		for(int i=0;i<usedTiles.Length;i++)
 			if(!usedTiles[i]) return i;
 		return -1;	
 	}	

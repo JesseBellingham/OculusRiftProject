@@ -51,9 +51,9 @@ public class HoverpadMover : MonoBehaviour
         if (Input.GetButton ("VehicleRotateLeft")) {
 			// Input.GetButton gets held down keys -- this code block runs as long as the HoverpadRotateLeft key is held down
 
-			hoverpad.transform.Rotate (0, -((moveSpeed * 60) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
+			hoverpad.transform.Rotate (0, -((moveSpeed * 30) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
 		} else if (Input.GetButton ("VehicleRotateRight")) {
-			hoverpad.transform.Rotate (0, ((moveSpeed * 60) * Time.deltaTime), 0);
+			hoverpad.transform.Rotate (0, ((moveSpeed * 30) * Time.deltaTime), 0);
 		} /*else if (){
 			//player.GetComponent<SimpleSmoothMouseLook>().enabled = false;
 			//hoverpad.transform.Rotate (mouseDelta);
