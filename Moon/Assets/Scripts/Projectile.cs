@@ -31,12 +31,12 @@ public class Projectile : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         Vector3 location = collision.transform.localPosition;
-        //ProjectileExplosion(location, collision);
+        ProjectileExplosion(location);
     }
 
-    void ProjectileExplosion(Vector3 location, Collision collision)
+    void ProjectileExplosion(Vector3 location)
     {
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 10; i++)
         {
             Quaternion rotation = new Quaternion(Random.Range(0, 360), Random.Range(0, 360), Random.Range(90, 270), 0);
             GameObject cloneProjectile = Instantiate(projectile, location, rotation) as GameObject;
