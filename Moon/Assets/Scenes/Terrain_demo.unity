@@ -935,6 +935,9 @@ AudioSource:
 --- !u!114 &529581960
 MonoBehaviour:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -956,6 +959,7 @@ MonoBehaviour:
   antiBunnyHopFactor: 1
 --- !u!54 &529581961
 Rigidbody:
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
 =======
   m_ObjectHideFlags: 0
@@ -1005,6 +1009,33 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+=======
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529581957}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!143 &529581962
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 529581957}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
   m_Height: 1.79999995
   m_Radius: .5
   m_SlopeLimit: 45
@@ -1267,12 +1298,21 @@ Prefab:
     - target: {fileID: 400000, guid: 0b2fef3450d7ff4489ee3306547e5ff2, type: 2}
       propertyPath: m_LocalScale.x
       value: 5000
+<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0b2fef3450d7ff4489ee3306547e5ff2, type: 2}
       propertyPath: m_LocalScale.y
       value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0b2fef3450d7ff4489ee3306547e5ff2, type: 2}
+=======
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0b2fef3450d7ff4489ee3306547e5ff2, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0b2fef3450d7ff4489ee3306547e5ff2, type: 2}
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
       propertyPath: m_LocalScale.z
       value: 5000
       objectReference: {fileID: 0}
@@ -1614,6 +1654,7 @@ Transform:
 =======
   m_RootOrder: 3
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of 1431e02... Fixes
 --- !u!1001 &978758120
 Prefab:
@@ -1679,6 +1720,8 @@ Transform:
   m_PrefabInternal: {fileID: 978758120}
 =======
   m_RootOrder: 3
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
+=======
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
 =======
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
@@ -2328,6 +2371,8 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &1333253413
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 Transform:
   m_ObjectHideFlags: 0
@@ -2389,10 +2434,43 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1364251537
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1333253412}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1668.24695, y: 45.1199989, z: 401.378998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1463675419}
+  m_RootOrder: 13
+--- !u!1 &1364251536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1364251537}
+  - 23: {fileID: 1364251539}
+  - 102: {fileID: 1364251538}
+  m_Layer: 10
+  m_Name: text_LanderEnter
+  m_TagString: LanderEnterText
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364251537
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+=======
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
 =======
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
   m_GameObject: {fileID: 1364251536}
@@ -3244,6 +3322,9 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
   m_IsPrefabParent: 0
 --- !u!146 &1528908716
+<<<<<<< HEAD
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
+=======
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
 WheelCollider:
   m_PrefabParentObject: {fileID: 14612738, guid: 101a1006e489cc3469300d043acffc1a,
@@ -3785,6 +3866,8 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &1718826269
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
 =======
 Transform:
   m_ObjectHideFlags: 0
@@ -3940,10 +4023,90 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1722631491
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1718826268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 1.61999989, z: 9.98998928}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 837300504}
+  m_RootOrder: 2
+--- !u!102 &1718826270
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718826268}
+  m_Text: 'Press "G" or gamepad "LB"
+
+    to exit the lander'
+  m_OffsetZ: 0
+  m_CharacterSize: .5
+  m_LineSpacing: 1
+  m_Anchor: 1
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &1718826271
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1718826268}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!1 &1722631490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1722631491}
+  - 23: {fileID: 1722631494}
+  - 102: {fileID: 1722631493}
+  m_Layer: 10
+  m_Name: text_HoverpadEnter
+  m_TagString: HoverpadEnterText
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1722631491
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+=======
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
 =======
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
   m_GameObject: {fileID: 1722631490}
@@ -4030,6 +4193,7 @@ Transform:
   m_Father: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
 <<<<<<< HEAD
 =======
@@ -4094,6 +4258,9 @@ Transform:
   m_PrefabParentObject: {fileID: 418356, guid: 2bd8501b9a07308439a33c4b41d411d4, type: 2}
   m_PrefabInternal: {fileID: 1774464165}
 =======
+>>>>>>> parent of 5312390... Environment additions -- Tidying up
+=======
+  m_RootOrder: 4
 >>>>>>> parent of 5312390... Environment additions -- Tidying up
 =======
   m_RootOrder: 4
