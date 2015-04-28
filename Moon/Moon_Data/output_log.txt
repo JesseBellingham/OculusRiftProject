@@ -19,7 +19,7 @@ Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moo
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.078 seconds
+- Completed reload, in  0.043 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -29,7 +29,7 @@ Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moo
 Shader 'Legacy Shaders/Bumped Specular': fallback shader 'Legacy Shaders/Specular' not found
 Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
 NullReferenceException: Object reference not set to an instance of an object
-  at MonolithAudio+<AdjustVolume>c__Iterator8.MoveNext () [0x00000] in <filename unknown>:0 
+  at MonolithAudio+<AdjustVolume>c__Iterator9.MoveNext () [0x00000] in <filename unknown>:0 
 UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
 UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
 MonolithAudio:Start()
@@ -57,5 +57,39 @@ Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported 
 (Filename:  Line: 1278)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 11d0 -> priority: 1 
+  Thread -> id: 1784 -> priority: 1 
   Thread -> id: 16d4 -> priority: 1 
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.334418 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 842.
+Total: 0.389098 ms (FindLiveObjects: 0.053731 ms CreateObjectMapping: 0.027167 ms MarkObjects: 0.179908 ms  DeleteObjects: 0.127385 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at MonolithAudio+<AdjustVolume>c__Iterator9.MoveNext () [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+MonolithAudio:Start()
+ 
+(Filename:  Line: -1)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+

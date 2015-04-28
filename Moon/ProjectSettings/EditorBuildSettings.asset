@@ -9,7 +9,9 @@ EditorBuildSettings:
     path: Assets/xx_Scenes/Main.unity
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Terrain_demo.unity
+  - enabled: 1
+    path: Assets/Scenes/Moon.unity
   - enabled: 1
     path: Assets/Scenes/ayylmao.unity
