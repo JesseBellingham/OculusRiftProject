@@ -168,11 +168,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 629489611}
   m_RootOrder: 15
---- !u!1 &123407697
+--- !u!1 &123407697 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: f5a03f35506aebc4b8b7e7498a6a0eda, type: 3}
   m_PrefabInternal: {fileID: 889899166}
---- !u!4 &123407698
+--- !u!4 &123407698 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f5a03f35506aebc4b8b7e7498a6a0eda, type: 3}
   m_PrefabInternal: {fileID: 889899166}
@@ -521,7 +521,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 290157857}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &311994267
+--- !u!4 &311994267 stripped
 Transform:
   m_PrefabParentObject: {fileID: 466344, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
   m_PrefabInternal: {fileID: 1541088863}
@@ -715,11 +715,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 629489611}
   m_RootOrder: 3
---- !u!4 &506464065
+--- !u!4 &506464065 stripped
 Transform:
   m_PrefabParentObject: {fileID: 447852, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
   m_PrefabInternal: {fileID: 959229392}
---- !u!1 &527336329
+--- !u!1 &527336329 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: 40694183cef852946a4713a37b36d6d3, type: 2}
   m_PrefabInternal: {fileID: 1596943747}
@@ -738,11 +738,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &549858350
+--- !u!1 &549858350 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 109570, guid: 719e9a5dff339fe4482e16c417d6217d, type: 2}
   m_PrefabInternal: {fileID: 1378288211}
---- !u!4 &549858351
+--- !u!4 &549858351 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411650, guid: 719e9a5dff339fe4482e16c417d6217d, type: 2}
   m_PrefabInternal: {fileID: 1378288211}
@@ -757,7 +757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b3b3abd536011f4589705984e1884c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1017327391}
 --- !u!82 &549858353
 AudioSource:
   m_ObjectHideFlags: 0
@@ -775,25 +775,45 @@ AudioSource:
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 20
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
+    - time: .050416667
+      value: .994883716
+      inSlope: -25.0099602
+      outSlope: -25.0099602
+      tangentMode: 0
+    - time: .111249998
+      value: .479534864
+      inSlope: -6.25249004
+      outSlope: -6.25249004
+      tangentMode: 0
+    - time: .194722205
+      value: .244883716
+      inSlope: -1.56312251
+      outSlope: -1.56312251
+      tangentMode: 0
+    - time: .319999993
+      value: .125
+      inSlope: -.390780628
+      outSlope: -.390780628
+      tangentMode: 0
+    - time: .639999986
+      value: .0625
+      inSlope: -.0976951569
+      outSlope: -.0976951569
       tangentMode: 0
     - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: .0399999991
+      inSlope: -.0400159508
+      outSlope: -.0400159508
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1447,8 +1467,6 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
-  m_UseDefaultSmoothness: 1
-  m_DefaultSmoothness: 0
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987
@@ -1960,7 +1978,7 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1058817801
+--- !u!4 &1058817801 stripped
 Transform:
   m_PrefabParentObject: {fileID: 414660, guid: a37ed5c05e02fbf4a8b1534153da1f9b, type: 2}
   m_PrefabInternal: {fileID: 1448978585}
@@ -2272,8 +2290,6 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
-  m_UseDefaultSmoothness: 1
-  m_DefaultSmoothness: 0
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987
@@ -2908,7 +2924,7 @@ RectTransform:
   m_AnchoredPosition: {x: -350, y: 121}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: .5, y: .5}
---- !u!4 &1412550635
+--- !u!4 &1412550635 stripped
 Transform:
   m_PrefabParentObject: {fileID: 496032, guid: 9d719f7143980c841b547fa8c92d02f4, type: 2}
   m_PrefabInternal: {fileID: 1347170198}
@@ -3844,7 +3860,7 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
---- !u!4 &1882642666
+--- !u!4 &1882642666 stripped
 Transform:
   m_PrefabParentObject: {fileID: 466344, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
   m_PrefabInternal: {fileID: 1154049208}
@@ -3941,8 +3957,6 @@ Terrain:
     serializedVersion: 2
     rgba: 4286545791
   m_LegacyShininess: .078125
-  m_UseDefaultSmoothness: 1
-  m_DefaultSmoothness: 0
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: .0511999987
