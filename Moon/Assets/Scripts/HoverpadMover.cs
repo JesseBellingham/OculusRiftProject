@@ -48,12 +48,12 @@ public class HoverpadMover : MonoBehaviour
         moveDirection *= moveSpeed; // Increases the speed of motion by a factor of moveSpeed
         controller.Move(moveDirection);
         
-        if (Input.GetButton ("VehicleRotateLeft")) {
+        if (Input.GetAxis ("Horizontal")== -1) {
 			// Input.GetButton gets held down keys -- this code block runs as long as the HoverpadRotateLeft key is held down
 
-			hoverpad.transform.Rotate (0, -((moveSpeed * 30) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
-		} else if (Input.GetButton ("VehicleRotateRight")) {
-			hoverpad.transform.Rotate (0, ((moveSpeed * 30) * Time.deltaTime), 0);
+			hoverpad.transform.Rotate (0, -((gamepadRotateSpeed * 30) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
+		} else if (Input.GetAxis ("Horizontal") == 1) {
+			hoverpad.transform.Rotate (0, ((gamepadRotateSpeed * 30) * Time.deltaTime), 0);
 		} /*else if (){
 			//player.GetComponent<SimpleSmoothMouseLook>().enabled = false;
 			//hoverpad.transform.Rotate (mouseDelta);
