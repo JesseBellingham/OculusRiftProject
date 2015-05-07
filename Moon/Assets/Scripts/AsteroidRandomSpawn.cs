@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AsteroidRandomSpawn : MonoBehaviour {
+public class AsteroidRandomSpawn : MonoBehaviour 
+{
 
 	public GameObject asteroid;
 	public float secondsUntilDestroy = 120;
@@ -9,14 +10,16 @@ public class AsteroidRandomSpawn : MonoBehaviour {
 	public float cloneSpeed;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+    {
 		// InvokeRepeating runs when this script starts -- it waits 15 seconds before calling CreateAsteroid()
 		// timeToSpawn dictates the delay in seconds between subsequent calls after the first.
 		InvokeRepeating ("CreateAsteroid", 15, timeToSpawn);
 	}
 
 
-	void CreateAsteroid(){
+	void CreateAsteroid()
+    {
 		// Creates a new asteroid with a randomly generated rotation (X rotation is limited to only spawn asteroids towards the floor),
 		// and randomly generated location coordinates somewhere above the floor.	
 
@@ -28,23 +31,29 @@ public class AsteroidRandomSpawn : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {		
+	void Update () 
+    {		
         // Creates an array of all the asteroid clones in the scene and checks if any are out of the specified coordinate bounds.
 
 		GameObject[] asteroids = GameObject.FindGameObjectsWithTag("Asteroid");
 
-		foreach (GameObject a in asteroids){
+		foreach (GameObject a in asteroids)
+        {
             // If an asteroid goes out of bounds, it is destroyed as long as it is not the last one
             // (There must always be at least one asteroid in the scene in order for new clones to be created)
             // -- otherwise it is destroyed after secondsUntilDestroy.
 
-			if ((a.transform.localPosition.y < -1000) || (a.transform.localPosition.y > 5000)) {                
-				if (asteroids.Length > 1){
+			if ((a.transform.localPosition.y < -1000) || (a.transform.localPosition.y > 5000)) 
+            {                
+				if (asteroids.Length > 1)
+                {
 					Destroy(a);
 				}
 				
-			} else if ((a.transform.localPosition.x < -2000) || (a.transform.localPosition.x > 2000)){
-				if (asteroids.Length > 1){
+			} else if ((a.transform.localPosition.x < -2000) || (a.transform.localPosition.x > 2000))
+            {
+				if (asteroids.Length > 1)
+                {
 					Destroy(a);
 				}
 			}

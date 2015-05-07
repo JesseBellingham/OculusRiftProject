@@ -8,7 +8,6 @@ public class HoverpadMover : MonoBehaviour
 {
     public float moveSpeed;
 	public float gamepadRotateSpeed;
-    //public float rotationDamping = 20f;
 	public Vector2 sensitivity = new Vector2(2, 2);
 	public Vector2 smoothing = new Vector2(3, 3);
 
@@ -48,13 +47,27 @@ public class HoverpadMover : MonoBehaviour
         moveDirection *= moveSpeed; // Increases the speed of motion by a factor of moveSpeed
         controller.Move(moveDirection);
         
-        if (Input.GetAxis ("Horizontal")== -1) {
+        // This is for controller input
+        /*if (Input.GetAxis ("Horizontal") == -1) {
 			// Input.GetButton gets held down keys -- this code block runs as long as the HoverpadRotateLeft key is held down
 
 			hoverpad.transform.Rotate (0, -((gamepadRotateSpeed * 30) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
 		} else if (Input.GetAxis ("Horizontal") == 1) {
 			hoverpad.transform.Rotate (0, ((gamepadRotateSpeed * 30) * Time.deltaTime), 0);
-		} /*else if (){
+		}*/
+
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            // Input.GetButton gets held down keys -- this code block runs as long as the HoverpadRotateLeft key is held down
+
+            hoverpad.transform.Rotate(0, -((gamepadRotateSpeed * 30) * Time.deltaTime), 0);   // Rotates the hoverpad to the left -- the number affects the speed of the rotation
+        }
+        else if (Input.GetAxis("Horizontal") > 0)
+        {
+            hoverpad.transform.Rotate(0, ((gamepadRotateSpeed * 30) * Time.deltaTime), 0);
+        }
+        
+        /*else if (){
 			//player.GetComponent<SimpleSmoothMouseLook>().enabled = false;
 			//hoverpad.transform.Rotate (mouseDelta);
 			Vector3 rotation = new Vector3(0, player.transform.localRotation.y, 0);
@@ -108,13 +121,14 @@ public class HoverpadMover : MonoBehaviour
         // Sets all the Player model components that allow movement
         // Disables hoverpad components that allow movement
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        
+
+        //GameObject.FindGameObjectWithTag("Attention").SetActive(true);
         player.GetComponent<EnhancedFPSCharacterController>().enabled = true;
         this.GetComponent<HoverpadMover>().enabled = false;
         this.GetComponent<CharacterController>().enabled = false;
         this.transform.position = new Vector3(this.transform.localPosition.x, 
-            this.transform.localPosition.y - 3, this.transform.localPosition.z); // One of the components on the hoverpad prevents it from properly reaching the ground when it is landed
-            // My workaround was to simply alter the hoverpad's Y position when the player steps off
+        this.transform.localPosition.y - 3, this.transform.localPosition.z); // One of the components on the hoverpad prevents it from properly reaching the ground when it is landed
+        // My workaround was to simply alter the hoverpad's Y position when the player steps off
         player.transform.parent = null; // Sets the Player model to no longer be a child of the hoverpad
 		//player.GetComponent<SimpleSmoothMouseLook> ().enabled = true;
     }

@@ -1,17 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HoverPadController : MonoBehaviour {
+public class HoverPadController : MonoBehaviour 
+{
 
     public static bool playerFlying = false;
-
-	// Use this for initialization
-	void Start () {
-        
-	}
-	
+    	
 	// Update is called once per frame
-	void Update () {  
+	void Update () 
+    {  
         TextRender();                
 	}
 
@@ -45,7 +42,8 @@ public class HoverPadController : MonoBehaviour {
         {
             // Checks that the player is not already flying, and has pressed the vehicle enter button
             if ((Input.GetButtonDown("VehicleEnter")) && (!playerFlying))
-            {         
+            {
+                //GameObject.FindGameObjectWithTag("Attention").SetActive(false);
                 player.GetComponent<EnhancedFPSCharacterController>().enabled = false;  // Disables the character controller component on the Player model
                 this.GetComponent<HoverpadMover>().enabled = true;                      // Enables movement oriented components on the hoverpad model
                 this.GetComponent<CharacterController>().enabled = true;

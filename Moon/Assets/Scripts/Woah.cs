@@ -1,28 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Woah : MonoBehaviour {
+public class Woah : MonoBehaviour 
+{
 
 	static bool foundMonolith = false;
-	//bool isHidden = true;
 
     // Awake() runs when the scene loads
-	void Awake(){
+	void Awake()
+    {
 		DontDestroyOnLoad (this);   // When a new scene is loaded, do not destroy the Monolith object
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
         CheckPlayerPosition();
 	}
 
-	void OnCollisionEnter(Collision col){
-		if (col.gameObject.tag == "Player") {
+	void OnCollisionEnter(Collision col)
+    {
+		if (col.gameObject.tag == "Player") 
+        {
             InvertGravity();
 		}
 	}
 
-	public static bool GetFoundMonolith(){
+	public static bool GetFoundMonolith()
+    {
 		return foundMonolith;
 	}
 
@@ -50,7 +55,6 @@ public class Woah : MonoBehaviour {
         }
         else if ((player.transform.localPosition.y <= -300) && (Application.loadedLevelName != "ayylmao"))
         {
-
             Application.LoadLevel("ayylmao");
         }
     }

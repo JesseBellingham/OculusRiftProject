@@ -1,19 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LanderController : MonoBehaviour {
+public class LanderController : MonoBehaviour 
+{
 
-    public static bool playerDriving = false;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public static bool playerDriving = false;	
 
     void OnTriggerEnter(Collider collider)
     {

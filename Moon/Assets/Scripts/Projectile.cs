@@ -1,16 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Projectile : MonoBehaviour {
-
+public class Projectile : MonoBehaviour 
+{
 	public GameObject projectile;
 	public float speed;
 	public float secondsUntilDestroy = 30;
 
 	private float startTime; 
 	
-	void Start () {		
-
+	void Start () 
+    {
 		startTime = Time.time;
 
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -19,10 +19,12 @@ public class Projectile : MonoBehaviour {
 	} 
 	
 	// Update is called once per frame
-	void FixedUpdate () {		
+	void FixedUpdate () 
+    {		
 		// If the projectile has existed as long as SecondsUntilDestroy, destroy it
 
-		if (Time.time - startTime >= secondsUntilDestroy) {
+		if (Time.time - startTime >= secondsUntilDestroy) 
+        {
 			Destroy(this.gameObject);
 		} 
 	}
@@ -30,7 +32,5 @@ public class Projectile : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         Vector3 location = collision.transform.localPosition;
-    }
-
-    
+    }    
 }

@@ -2,8 +2,8 @@
 using System.Collections;
 using Utility;
 
-public class myTerrainManager : MonoBehaviour {
-
+public class myTerrainManager : MonoBehaviour 
+{
 	public GameObject player;
 	public Terrain refTerrain;
 	public int spread = 2;
@@ -16,7 +16,8 @@ public class myTerrainManager : MonoBehaviour {
 
 	private DoubleKeyDictionary<int, int, int> terrainList = new DoubleKeyDictionary<int, int, int>();
 
-	void Start(){
+	void Start()
+    {
 		currentTerrainID = new int[2];
 		usedTiles = new BitArray(TERRAIN_BUFFER_COUNT, false);
 		referencePosition = refTerrain.transform.position;
@@ -24,7 +25,8 @@ public class myTerrainManager : MonoBehaviour {
 		referenceSize = new Vector2(refTerrain.terrainData.size.x, refTerrain.terrainData.size.z);
 	}
 
-	void Update(){
+	void Update()
+    {
 		Vector3 warpPosition = player.transform.position;
 		TerrainIDFromPosition(ref currentTerrainID, ref warpPosition);
 
@@ -37,7 +39,8 @@ public class myTerrainManager : MonoBehaviour {
 		}
 	}
 
-	void DropTerrainAt(int i, int j){
+	void DropTerrainAt(int i, int j)
+    {
 		// Check if terrain exists, if it does, activate it.
 		if(terrainList.ContainsKey(i, j) && terrainList[i,j] != -1)
 		{

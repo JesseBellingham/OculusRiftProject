@@ -25,6 +25,7 @@ TagManager:
   - LanderExitText
   - FrontWheel
   - RearWheel
+  - Attention
   layers:
   - Default
   - TransparentFX

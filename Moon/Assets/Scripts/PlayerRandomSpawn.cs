@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerRandomSpawn : MonoBehaviour {
+public class PlayerRandomSpawn : MonoBehaviour 
+{
 
 
 	// Use this for initialization
-	void Start () {
-		SpawnPlayer ();	
+	void Start () 
+    {
+		SpawnPlayer();	
 	}
-	void SpawnPlayer(){
+	void SpawnPlayer()
+    {
         // An array of gameobjects is created containing all scene objects tagged as "Spawnpoint"
         
 		GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("Spawnpoint");

@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 478506}
   m_Layer: 0
-  m_Name: boxstack_Offset
+  m_Name: boxstack_Cross
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
