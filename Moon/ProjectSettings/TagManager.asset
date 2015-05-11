@@ -26,6 +26,7 @@ TagManager:
   - FrontWheel
   - RearWheel
   - Attention
+  - Stonehenge
   layers:
   - Default
   - TransparentFX
@@ -39,7 +40,7 @@ TagManager:
   - Floor
   - Player
   - Hoverpad
-  - 
+  - Stonehenge
   - 
   - 
   - 

@@ -10,6 +10,10 @@ public class Woah : MonoBehaviour
 	void Awake()
     {
 		DontDestroyOnLoad (this);   // When a new scene is loaded, do not destroy the Monolith object
+		//GameObject[] stonehenge = GameObject.FindGameObjectsWithTag ("Stonehenge");
+		//foreach (GameObject box in stonehenge) {
+			//box.GetComponent<Rigidbody>().useGravity = false;
+		//}
 	}
 	
 	// Update is called once per frame
@@ -41,6 +45,11 @@ public class Woah : MonoBehaviour
         player.GetComponent<Rigidbody>().isKinematic = false;   // Sets player to not require direct instruction for movement
         ((EnhancedFPSCharacterController)player.GetComponent<EnhancedFPSCharacterController>()).enabled = false;
         this.GetComponent<Rigidbody>().useGravity = true;   // Sets monolith to be affected by gravity
+		GameObject[] stonehenge = GameObject.FindGameObjectsWithTag ("Stonehenge");
+		foreach (GameObject box in stonehenge) {
+			box.GetComponent<Rigidbody>().isKinematic = false;
+			box.GetComponent<Rigidbody>().useGravity = true;
+		}
         Physics.gravity = new Vector3(0, 9.81f, 0);         // Inverts gravity
         foundMonolith = true;
     }

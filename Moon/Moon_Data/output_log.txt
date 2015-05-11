@@ -19,7 +19,7 @@ Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moo
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.044 seconds
+- Completed reload, in  0.047 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -49,13 +49,21 @@ Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported 
 (Filename:  Line: 1278)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 15d0 -> priority: 1 
-  Thread -> id: 1678 -> priority: 1 
+  Thread -> id: b2c -> priority: 1 
+  Thread -> id: 1718 -> priority: 1 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.828326 ms
+UnloadTime: 4.349209 ms
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 916.
-Total: 0.359516 ms (FindLiveObjects: 0.033808 ms CreateObjectMapping: 0.026261 ms MarkObjects: 0.177192 ms  DeleteObjects: 0.121951 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 952.
+Total: 0.392117 ms (FindLiveObjects: 0.055844 ms CreateObjectMapping: 0.035015 ms MarkObjects: 0.183833 ms  DeleteObjects: 0.116820 ms)
+
+Ouch! Fell 20.49066 units!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Ouch! Fell 11.12149 units!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
 Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
  
@@ -70,11 +78,11 @@ The referenced script on this Behaviour is missing!
 (Filename:  Line: 1713)
 
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.136570 ms
+UnloadTime: 1.391577 ms
 
-Unloading 94 unused Assets to reduce memory usage. Loaded Objects now: 506.
-Total: 2.993250 ms (FindLiveObjects: 0.040449 ms CreateObjectMapping: 0.044373 ms MarkObjects: 0.153647 ms  DeleteObjects: 2.754177 ms)
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 530.
+Total: 4.857844 ms (FindLiveObjects: 0.030487 ms CreateObjectMapping: 0.055542 ms MarkObjects: 0.250544 ms  DeleteObjects: 4.520062 ms)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 18fc -> priority: 1 
-  Thread -> id: 16cc -> priority: 1 
+  Thread -> id: 660 -> priority: 1 
+  Thread -> id: 16bc -> priority: 1 
