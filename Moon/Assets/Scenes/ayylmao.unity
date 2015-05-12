@@ -176,7 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroid: {fileID: 158876, guid: a37ed5c05e02fbf4a8b1534153da1f9b, type: 2}
   secondsUntilDestroy: 120
-  timeToSpawn: 3
+  timeToSpawn: 1
   cloneSpeed: 60
 --- !u!4 &807994871
 Transform:
@@ -458,37 +458,7 @@ Prefab:
     - {fileID: 11402526, guid: 6572b761699d70c478a299901b5019fe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6572b761699d70c478a299901b5019fe, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1882986482 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 112110, guid: 6572b761699d70c478a299901b5019fe, type: 2}
-  m_PrefabInternal: {fileID: 1882986481}
---- !u!1 &1882986483 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 149788, guid: 6572b761699d70c478a299901b5019fe, type: 2}
-  m_PrefabInternal: {fileID: 1882986481}
---- !u!114 &1882986484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1882986482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763efef23512d0d4989df8e0a84979e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1882986485
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1882986483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 763efef23512d0d4989df8e0a84979e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1882986486 stripped
+--- !u!1 &1882986486
 GameObject:
   m_PrefabParentObject: {fileID: 161068, guid: 6572b761699d70c478a299901b5019fe, type: 2}
   m_PrefabInternal: {fileID: 1882986481}
