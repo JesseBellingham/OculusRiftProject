@@ -58,7 +58,7 @@ public class Woah : MonoBehaviour
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
-        if ((player.transform.localPosition.y > 600) && (Application.loadedLevelName != "ayylmao"))
+        if ((player.transform.localPosition.y > 2000) && (Application.loadedLevelName != "ayylmao"))
         {     // Loads the secret room if the player goes out of bounds on the main level
             Application.LoadLevel("ayylmao");
         }
