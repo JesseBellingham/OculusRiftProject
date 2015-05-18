@@ -167,7 +167,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 6
+      value: boxstack_6
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -321,7 +321,7 @@ GameObject:
   - 198: {fileID: 65029516}
   - 199: {fileID: 65029515}
   m_Layer: 0
-  m_Name: part_starField 3
+  m_Name: part_starField_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1650,8 +1650,8 @@ Transform:
   m_LocalPosition: {x: 1651.96399, y: 45.0159988, z: 493.675995}
   m_LocalScale: {x: .0500000007, y: .0500000007, z: .0500000007}
   m_Children:
-  - {fileID: 549858351}
   - {fileID: 2137727469}
+  - {fileID: 549858351}
   - {fileID: 274202052}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1845,7 +1845,7 @@ GameObject:
   - 4: {fileID: 179088986}
   - 108: {fileID: 179088987}
   m_Layer: 0
-  m_Name: Spotlight 2
+  m_Name: light_Spotlight_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1948,7 +1948,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 9
+      value: boxstack_9
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -2048,7 +2048,7 @@ GameObject:
   - 198: {fileID: 183514614}
   - 199: {fileID: 183514613}
   m_Layer: 0
-  m_Name: part_starField_distant 5
+  m_Name: part_starField_distant_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3390,7 +3390,7 @@ GameObject:
   - 198: {fileID: 205361957}
   - 199: {fileID: 205361956}
   m_Layer: 0
-  m_Name: part_starField_distant 4
+  m_Name: part_starField_distant_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4747,7 +4747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 11
+      value: boxstack_11
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -4899,6 +4899,10 @@ Prefab:
       propertyPath: gamepadRotateSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 150486, guid: 516203ea3ce28cc468ec1b8b3e391812, type: 2}
+      propertyPath: m_Name
+      value: pointlight_Hoverpad
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 516203ea3ce28cc468ec1b8b3e391812, type: 2}
   m_IsPrefabParent: 0
@@ -4948,7 +4952,7 @@ GameObject:
   - 198: {fileID: 233880818}
   - 199: {fileID: 233880817}
   m_Layer: 0
-  m_Name: part_starField_distant 1
+  m_Name: part_starField_distant_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6305,7 +6309,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 19
+      value: boxstack_19
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -6447,7 +6451,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 26
+      value: boxstack_26
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -6608,7 +6612,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 15
+      value: boxstack_15
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -6707,7 +6711,7 @@ GameObject:
   - 4: {fileID: 273943039}
   - 108: {fileID: 273943040}
   m_Layer: 0
-  m_Name: Directional Light 2
+  m_Name: light_Directional_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6872,7 +6876,7 @@ GameObject:
   - 198: {fileID: 292403125}
   - 199: {fileID: 292403124}
   m_Layer: 0
-  m_Name: part_starField 4
+  m_Name: part_starField_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8233,7 +8237,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 23
+      value: boxstack_23
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -8375,7 +8379,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 24
+      value: boxstack_24
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -8615,7 +8619,7 @@ GameObject:
   - 4: {fileID: 436485200}
   - 108: {fileID: 436485201}
   m_Layer: 0
-  m_Name: Spotlight 3
+  m_Name: light_Spotlight_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8787,7 +8791,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 4
+      value: boxstack_4
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -8887,7 +8891,7 @@ GameObject:
   - 198: {fileID: 545539892}
   - 199: {fileID: 545539891}
   m_Layer: 0
-  m_Name: part_starField 5
+  m_Name: part_starField_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10364,7 +10368,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 22
+      value: boxstack_22
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -10563,7 +10567,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 14
+      value: boxstack_14
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -10743,7 +10747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 12
+      value: boxstack_12
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -10930,7 +10934,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 13
+      value: boxstack_13
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -11072,7 +11076,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 5
+      value: boxstack_5
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -11171,7 +11175,7 @@ GameObject:
   - 4: {fileID: 739413442}
   - 108: {fileID: 739413443}
   m_Layer: 0
-  m_Name: Directional Light 1
+  m_Name: light_Directional_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11259,7 +11263,7 @@ GameObject:
   - 198: {fileID: 868932403}
   - 199: {fileID: 868932402}
   m_Layer: 0
-  m_Name: part_starField 1
+  m_Name: part_starField_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12680,7 +12684,7 @@ GameObject:
   - 4: {fileID: 923997465}
   - 108: {fileID: 923997466}
   m_Layer: 0
-  m_Name: Spotlight 3
+  m_Name: light_Spotlight_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12880,7 +12884,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 20
+      value: boxstack_20
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -13048,6 +13052,14 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 152638, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
+      propertyPath: m_Name
+      value: Dart Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 154038, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
+      propertyPath: m_Name
+      value: mesh_Dartgun
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 379f3f5f37ce2e144a3400f39dfa3585, type: 2}
   m_IsPrefabParent: 0
@@ -13104,7 +13116,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 18
+      value: boxstack_18
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -13203,7 +13215,7 @@ GameObject:
   - 4: {fileID: 992304164}
   - 108: {fileID: 992304163}
   m_Layer: 0
-  m_Name: Spotlight 1
+  m_Name: light_Spotlight_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13418,6 +13430,10 @@ Prefab:
     - target: {fileID: 400002, guid: 9930946b7c5f48e44aef1e56c2de7315, type: 2}
       propertyPath: m_LocalPosition.y
       value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9930946b7c5f48e44aef1e56c2de7315, type: 2}
+      propertyPath: m_Name
+      value: Star Field
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9930946b7c5f48e44aef1e56c2de7315, type: 2}
@@ -13744,7 +13760,7 @@ GameObject:
   - 4: {fileID: 1063567375}
   - 108: {fileID: 1063567376}
   m_Layer: 0
-  m_Name: Directional Light 2
+  m_Name: light_Directional_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14091,7 +14107,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 10
+      value: boxstack_10
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -14233,7 +14249,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 7
+      value: boxstack_7
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -14394,7 +14410,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 1
+      value: boxstack_1
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -14617,7 +14633,7 @@ GameObject:
   - 4: {fileID: 1274105028}
   - 108: {fileID: 1274105029}
   m_Layer: 0
-  m_Name: Spotlight
+  m_Name: light_Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14677,7 +14693,7 @@ GameObject:
   - 4: {fileID: 1279278861}
   - 108: {fileID: 1279278862}
   m_Layer: 0
-  m_Name: Spotlight 4
+  m_Name: light_Spotlight_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14854,7 +14870,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 25
+      value: boxstack_25
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -15041,7 +15057,7 @@ GameObject:
   - 4: {fileID: 1359261795}
   - 108: {fileID: 1359261796}
   m_Layer: 0
-  m_Name: Spotlight 2
+  m_Name: light_Spotlight_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15288,7 +15304,7 @@ GameObject:
   - 4: {fileID: 1412759915}
   - 108: {fileID: 1412759916}
   m_Layer: 0
-  m_Name: Directional Light 1
+  m_Name: light_Directional_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15379,7 +15395,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 158876, guid: a37ed5c05e02fbf4a8b1534153da1f9b, type: 2}
       propertyPath: m_Name
-      value: Asteroid
+      value: asteroid
       objectReference: {fileID: 0}
     - target: {fileID: 414660, guid: a37ed5c05e02fbf4a8b1534153da1f9b, type: 2}
       propertyPath: m_LocalScale.x
@@ -15450,7 +15466,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 3
+      value: boxstack_3
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -15549,7 +15565,7 @@ GameObject:
   - 4: {fileID: 1475463262}
   - 114: {fileID: 1475463261}
   m_Layer: 0
-  m_Name: AsteroidSpawner
+  m_Name: Asteroid Spawner
   m_TagString: AsteroidSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15612,7 +15628,7 @@ GameObject:
   - 4: {fileID: 1485246564}
   - 108: {fileID: 1485246565}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: light_Directional
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15733,7 +15749,7 @@ GameObject:
   - 198: {fileID: 1534603721}
   - 199: {fileID: 1534603720}
   m_Layer: 0
-  m_Name: part_starField_distant 2
+  m_Name: part_starField_distant_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17167,7 +17183,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 2
+      value: boxstack_2
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -17266,7 +17282,7 @@ GameObject:
   - 4: {fileID: 1560279238}
   - 108: {fileID: 1560279239}
   m_Layer: 0
-  m_Name: Spotlight 4
+  m_Name: light_Spotlight_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17369,7 +17385,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 21
+      value: boxstack_21
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -17543,7 +17559,7 @@ GameObject:
   - 198: {fileID: 1564665960}
   - 199: {fileID: 1564665959}
   m_Layer: 0
-  m_Name: part_starField_distant 3
+  m_Name: part_starField_distant_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19273,7 +19289,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 8
+      value: boxstack_8
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -19418,7 +19434,7 @@ GameObject:
   - 4: {fileID: 1819382036}
   - 108: {fileID: 1819382037}
   m_Layer: 0
-  m_Name: Directional Light
+  m_Name: light_Directional
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19521,7 +19537,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 17
+      value: boxstack_17
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -19732,7 +19748,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 27
+      value: boxstack_27
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -20300,7 +20316,7 @@ GameObject:
   - 198: {fileID: 2062318765}
   - 199: {fileID: 2062318764}
   m_Layer: 0
-  m_Name: part_starField 2
+  m_Name: part_starField_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21652,7 +21668,7 @@ GameObject:
   - 4: {fileID: 2073747472}
   - 108: {fileID: 2073747473}
   m_Layer: 0
-  m_Name: Spotlight 1
+  m_Name: light_Spotlight_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21755,7 +21771,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_Name
-      value: boxstack 16
+      value: boxstack_16
       objectReference: {fileID: 0}
     - target: {fileID: 174126, guid: 0d06d8e629856334285fbc68ebc4123f, type: 2}
       propertyPath: m_TagString
@@ -21854,7 +21870,7 @@ GameObject:
   - 4: {fileID: 2091404672}
   - 108: {fileID: 2091404673}
   m_Layer: 0
-  m_Name: Spotlight
+  m_Name: light_Spotlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21958,4 +21974,4 @@ Transform:
   - {fileID: 238520946}
   - {fileID: 1898850949}
   m_Father: {fileID: 66456965}
-  m_RootOrder: 1
+  m_RootOrder: 0
