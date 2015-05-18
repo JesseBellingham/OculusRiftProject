@@ -19,14 +19,15 @@ Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moo
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
+- Completed reload, in  0.048 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.dll (this message is harmless)
-Shader 'Nature/Terrain/Specular': fallback shader 'Nature/Terrain/Diffuse' not found
+Shader 'Legacy Shaders/Bumped Specular': fallback shader 'Legacy Shaders/Specular' not found
+Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
 Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
  
 (Filename:  Line: 1278)
@@ -48,19 +49,23 @@ Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported 
 (Filename:  Line: 1278)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 16e0 -> priority: 1 
-  Thread -> id: 16e4 -> priority: 1 
+  Thread -> id: f98 -> priority: 1 
+  Thread -> id: 960 -> priority: 1 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.786303 ms
+UnloadTime: 5.142499 ms
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2226.
-Total: 0.538821 ms (FindLiveObjects: 0.083011 ms CreateObjectMapping: 0.040147 ms MarkObjects: 0.292201 ms  DeleteObjects: 0.123159 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2265.
+Total: 0.653226 ms (FindLiveObjects: 0.108066 ms CreateObjectMapping: 0.040449 ms MarkObjects: 0.380042 ms  DeleteObjects: 0.124064 ms)
 
-Ouch! Fell 12.46955 units!
+Ouch! Fell 12.45316 units!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
-Ouch! Fell 32.33878 units!
+Ouch! Fell 20.64054 units!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Ouch! Fell 10.89108 units!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
 
