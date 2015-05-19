@@ -82,7 +82,6 @@ public class HoverPadController : MonoBehaviour
     IEnumerator HoverpadExitStopRender(float waitTime)
     {
         // Coroutine waits for waitTime seconds and then disables the renderer for the hoverpad enter text
-
         yield return new WaitForSeconds(waitTime);
 
         GameObject text = GameObject.FindGameObjectWithTag("HoverpadExitText");

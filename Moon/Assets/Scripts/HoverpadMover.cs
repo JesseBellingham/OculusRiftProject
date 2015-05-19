@@ -77,8 +77,6 @@ public class HoverpadMover : MonoBehaviour
 
     void Update()
     {
-
-
         if (HoverPadController.playerFlying)
         {
             if (Input.GetButtonDown("VehicleExit"))
@@ -130,6 +128,5 @@ public class HoverpadMover : MonoBehaviour
         this.transform.localPosition.y - 3, this.transform.localPosition.z); // One of the components on the hoverpad prevents it from properly reaching the ground when it is landed
         // My workaround was to simply alter the hoverpad's Y position when the player steps off
         player.transform.parent = null; // Sets the Player model to no longer be a child of the hoverpad
-		//player.GetComponent<SimpleSmoothMouseLook> ().enabled = true;
     }
 }

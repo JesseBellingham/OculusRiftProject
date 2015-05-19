@@ -10,10 +10,6 @@ public class Woah : MonoBehaviour
 	void Awake()
     {
 		DontDestroyOnLoad (this);   // When a new scene is loaded, do not destroy the Monolith object
-		//GameObject[] stonehenge = GameObject.FindGameObjectsWithTag ("Stonehenge");
-		//foreach (GameObject box in stonehenge) {
-			//box.GetComponent<Rigidbody>().useGravity = false;
-		//}
 	}
 	
 	// Update is called once per frame

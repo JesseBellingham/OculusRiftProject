@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerRespawn : MonoBehaviour {
 
-	void OnGUI () 
+	void Update() 
 	{		
-		if (Event.current.Equals (Event.KeyboardEvent ("r"))) Application.LoadLevel("Moon");		
+		if (Input.GetButtonDown("PlayerRespawn")) Application.LoadLevel("Moon");		
 	}
 }

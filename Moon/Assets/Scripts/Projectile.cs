@@ -22,7 +22,6 @@ public class Projectile : MonoBehaviour
 	void FixedUpdate () 
     {		
 		// If the projectile has existed as long as SecondsUntilDestroy, destroy it
-
 		if (Time.time - startTime >= secondsUntilDestroy) 
         {
 			Destroy(this.gameObject);
