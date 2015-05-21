@@ -1,0 +1,107 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+Forcing GfxDevice: 2
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 550 Ti (ID=0x1244)
+    Vendor:   NVIDIA
+    VRAM:     977 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.046 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+<RI> Initialized touch support.
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.dll (this message is harmless)
+Shader 'Legacy Shaders/Bumped Specular': fallback shader 'Legacy Shaders/Specular' not found
+Shader 'Nature/Terrain/Specular': dependency 'BaseMapShader' shader 'Hidden/TerrainEngine/Splatmap/Specular-Base' not found
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1a8 -> priority: 1 
+  Thread -> id: 1504 -> priority: 1 
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.911877 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2265.
+Total: 0.563573 ms (FindLiveObjects: 0.094180 ms CreateObjectMapping: 0.038638 ms MarkObjects: 0.314840 ms  DeleteObjects: 0.115612 ms)
+
+Ouch! Fell 11.06131 units!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Ouch! Fell 10.38384 units!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.769356 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2266.
+Total: 0.581987 ms (FindLiveObjects: 0.117121 ms CreateObjectMapping: 0.036223 ms MarkObjects: 0.341706 ms  DeleteObjects: 0.085728 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.476831 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2266.
+Total: 0.511653 ms (FindLiveObjects: 0.084822 ms CreateObjectMapping: 0.035317 ms MarkObjects: 0.301257 ms  DeleteObjects: 0.089954 ms)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.862006 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2266.
+Total: 0.581383 ms (FindLiveObjects: 0.119536 ms CreateObjectMapping: 0.037128 ms MarkObjects: 0.327820 ms  DeleteObjects: 0.095991 ms)
+
+Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
+ 
+(Filename:  Line: 1278)
+
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.578386 ms
+
+Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 519.
+Total: 3.467474 ms (FindLiveObjects: 0.048901 ms CreateObjectMapping: 0.031091 ms MarkObjects: 0.211000 ms  DeleteObjects: 3.174971 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1588 -> priority: 1 
+  Thread -> id: 120c -> priority: 1 
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 404.332794 ms
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2286.
+Total: 0.575648 ms (FindLiveObjects: 0.118027 ms CreateObjectMapping: 0.036223 ms MarkObjects: 0.335970 ms  DeleteObjects: 0.084822 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 140c -> priority: 1 
+  Thread -> id: dbc -> priority: 1 
