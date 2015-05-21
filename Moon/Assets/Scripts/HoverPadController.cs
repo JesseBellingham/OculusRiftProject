@@ -17,7 +17,6 @@ public class HoverPadController : MonoBehaviour
         // Runs when the player enters the small sphere collider on the deck of the hoverpad
         // Renders the instructions for entering the hoverpad
         // When the player exits the collider, the instructions are not rendered
-
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject text = GameObject.FindGameObjectWithTag("HoverpadEnterText");
         Renderer textRenderer = text.GetComponent<Renderer>();
@@ -31,7 +30,6 @@ public class HoverPadController : MonoBehaviour
     void OnTriggerStay(Collider collider)
     {
         // Runs when the player enters the collider and continues to run as long as the player stays within the collider
-
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject hoverpad = GameObject.FindGameObjectWithTag("Hoverpad");
         GameObject exitText = GameObject.FindGameObjectWithTag("HoverpadExitText");

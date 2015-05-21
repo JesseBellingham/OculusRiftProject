@@ -10,6 +10,7 @@ public class PlayerRandomSpawn : MonoBehaviour
     {
 		SpawnPlayer();	
 	}
+
 	void SpawnPlayer()
     {
         // An array of gameobjects is created containing all scene objects tagged as "Spawnpoint"        

@@ -78,7 +78,6 @@ public class LanderController : MonoBehaviour
     IEnumerator LanderExitStopRender(float waitTime)
     {
         // Coroutine waits for waitTime seconds and then disables the renderer for the lander enter text
-
         yield return new WaitForSeconds(waitTime);
 
         GameObject text = GameObject.FindGameObjectWithTag("LanderExitText");

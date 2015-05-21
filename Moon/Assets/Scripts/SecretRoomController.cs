@@ -9,15 +9,13 @@ public class SecretRoomController : MonoBehaviour
 	void Start () 
     {
 		// CheckTextDisplay selects which renderer for the respawn text is enabled on scene start
-		// Coroutine is started which waits 1 second before executing the subsequent code
-		
+		// Coroutine is started which waits 1 second before executing the subsequent code		
 		StartCoroutine (CheckTextDisplay (1f));		
 	}
 
 	IEnumerator WaitAndStopRespawnRender(float waitTime)
     {
 		// Coroutine waits for waitTime seconds and then disables the renderer for the respawn text
-
 		yield return new WaitForSeconds (waitTime);
 		
 		GameObject text = GameObject.FindGameObjectWithTag ("RespawnText");
@@ -28,8 +26,7 @@ public class SecretRoomController : MonoBehaviour
 
 	IEnumerator WaitAndStopMonolithRender(float waitTime)
     {
-		// Coroutine waits for waitTime seconds and then disables the renderer for the monolith text
-		
+		// Coroutine waits for waitTime seconds and then disables the renderer for the monolith text		
 		yield return new WaitForSeconds (waitTime);
 		
 		GameObject text = GameObject.FindGameObjectWithTag ("MonolithText");
@@ -41,7 +38,6 @@ public class SecretRoomController : MonoBehaviour
 	IEnumerator CheckTextDisplay(float waitTime)
     {
         // Coroutine waits for waitTime seconds
-
 		yield return new WaitForSeconds (waitTime);
 
 		GameObject respawnText = GameObject.FindGameObjectWithTag("RespawnText");

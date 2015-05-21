@@ -24,7 +24,8 @@ public class ParticleField : MonoBehaviour
     }
 
     void OnTriggerExit(Collider collider)
-    {        
+    {
+		// Sets player variables back to normal
         player.airControl = false;
         player.gravity = 1.622f;
         player.walkSpeed = 6;

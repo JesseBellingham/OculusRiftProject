@@ -42,6 +42,7 @@ public class Woah : MonoBehaviour
         ((EnhancedFPSCharacterController)player.GetComponent<EnhancedFPSCharacterController>()).enabled = false;
         this.GetComponent<Rigidbody>().useGravity = true;   // Sets monolith to be affected by gravity
 		GameObject[] stonehenge = GameObject.FindGameObjectsWithTag ("Stonehenge");
+		// Sets the boxes in the arrangement around the Monolith to be affected by gravity
 		foreach (GameObject box in stonehenge) {
 			box.GetComponent<Rigidbody>().isKinematic = false;
 			box.GetComponent<Rigidbody>().useGravity = true;
@@ -54,8 +55,9 @@ public class Woah : MonoBehaviour
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
+		// Loads the secret room if the player goes out of bounds on the main level
         if ((player.transform.localPosition.y > 2000) && (Application.loadedLevelName != "ayylmao"))
-        {     // Loads the secret room if the player goes out of bounds on the main level
+        {   
             Application.LoadLevel("ayylmao");
         }
         else if ((player.transform.localPosition.y <= -300) && (Application.loadedLevelName != "ayylmao"))

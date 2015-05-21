@@ -17,14 +17,10 @@ public class LanderMover : MonoBehaviour
     public WheelCollider rearRWheel;
     public WheelCollider rearLWheel;
 
-
-    // If checked, then the player can change direction while in the air
-    //public bool airControl = false;
-
-    // Small amounts of this results in bumping when walking down slopes, but large amounts results in falling too fast
+	// Carried over from EnhancedFPSCharacterController...pretty sure it's not doing anything
     public float antiBumpFactor = .75f;
 
-    // Player must be grounded for at least this many physics frames before being able to jump again; set to 0 to allow bunny hopping
+    // Carried over from EnhancedFPSCharacterController...pretty sure it's not doing anything
     public int antiBunnyHopFactor = 1;
 
 
@@ -39,7 +35,6 @@ public class LanderMover : MonoBehaviour
     private float rayDistance;
     private Vector3 contactPoint;
     private bool playerControl = false;
-    private int jumpTimer;
     private WheelCollider[] wheelColliders = new WheelCollider[4];
     private GameObject[] wheelMeshes = new GameObject[4];
     private Vector3 centreOfMassOffset;
@@ -55,7 +50,6 @@ public class LanderMover : MonoBehaviour
         myTransform = transform;
         //speed = moveSpeed;
         rayDistance = controller.height * .5f + controller.radius;
-        jumpTimer = antiBunnyHopFactor;
 
         wheelMeshLocalRotations = new Quaternion[4];
 

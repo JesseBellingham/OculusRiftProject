@@ -66,13 +66,6 @@ public class HoverpadMover : MonoBehaviour
         {
             hoverpad.transform.Rotate(0, ((gamepadRotateSpeed * 30) * Time.deltaTime), 0);
         }
-        
-        /*else if (){
-			//player.GetComponent<SimpleSmoothMouseLook>().enabled = false;
-			//hoverpad.transform.Rotate (mouseDelta);
-			Vector3 rotation = new Vector3(0, player.transform.localRotation.y, 0);
-			hoverpad.transform.Rotate(rotation * gamepadRotateSpeed);
-		}*/
     }
 
     void Update()
@@ -81,7 +74,7 @@ public class HoverpadMover : MonoBehaviour
         {
             if (Input.GetButtonDown("VehicleExit"))
             {
-                StartCoroutine(HoverpadLand(0.016f)); 
+                StartCoroutine(HoverpadLand(0.016f));
             }
 
             if (Input.GetButton("HoverpadUp"))
