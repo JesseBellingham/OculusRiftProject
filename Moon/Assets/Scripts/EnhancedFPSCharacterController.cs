@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*	This script was written by MicroTurret on ModDB.com
+ * http://www.moddb.com/games/white-sound/tutorials/unity-character-controller-basics-scripts
+ */
+
+using System;
 using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;

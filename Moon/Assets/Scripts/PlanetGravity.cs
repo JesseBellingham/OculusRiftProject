@@ -1,4 +1,12 @@
-﻿using UnityEngine;
+﻿/*
+    FauxGravityAttractor.js
+    Written by Tonio Loewald ©2008
+   
+    Attach this script to objects you want to exert Faux Gravity
+    Adapted original JavaScript into C# for my project
+*/
+
+using UnityEngine;
 using System.Collections;
 
 public class PlanetGravity : MonoBehaviour 
