@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Sourced from Helix Toolkit
+ * 3D toolkit for .NET
+ * 
+ * https://github.com/helix-toolkit
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 

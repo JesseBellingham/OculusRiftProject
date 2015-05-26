@@ -1,3 +1,11 @@
+/*
+ * Sourced from Shift Up
+ * http://upshift.org/2012/02/building-endless-terrain-in-unity3d/
+ * 
+ * Script currently not in use
+ * 
+ */
+
 using UnityEngine;
 using System.Collections;
 using Utility;
