@@ -1,4 +1,5 @@
-﻿/*	This script was written by MicroTurret on ModDB.com
+﻿/*	
+ * This script was written by MicroTurret on ModDB.com
  * http://www.moddb.com/games/white-sound/tutorials/unity-character-controller-basics-scripts
  */
 
