@@ -1,11 +1,11 @@
 Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
-Forcing GfxDevice: 2
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 550 Ti (ID=0x1244)
+    Version:  Direct3D 9.0c [nvd3dum.dll 9.18.13.4788]
+    Renderer: NVIDIA GeForce GTX 550 Ti
     Vendor:   NVIDIA
-    VRAM:     977 MB
+    VRAM:     977 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -22,7 +22,7 @@ Loading C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Mana
 - Completed reload, in  0.045 seconds
 <RI> Initializing input.
 <RI> Input initialized.
-desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
+desktop: 1920x1200 59Hz; virtual: 2944x1200 at 0,0
 <RI> Initialized touch support.
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\21202405\Documents\GitHub\OculusRiftProject\Moon\Moon_Data\Managed\System.dll (this message is harmless)
@@ -49,57 +49,12 @@ Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported 
 (Filename:  Line: 1278)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 43c -> priority: 1 
-  Thread -> id: dd0 -> priority: 1 
+  Thread -> id: e9c -> priority: 1 
+  Thread -> id: 14c8 -> priority: 1 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.469642 ms
+UnloadTime: 4.600358 ms
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2265.
-Total: 0.569609 ms (FindLiveObjects: 0.108669 ms CreateObjectMapping: 0.041052 ms MarkObjects: 0.296124 ms  DeleteObjects: 0.122857 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2262.
+Total: 0.719334 ms (FindLiveObjects: 0.089954 ms CreateObjectMapping: 0.095086 ms MarkObjects: 0.412643 ms  DeleteObjects: 0.121046 ms)
 
-Ouch! Fell 14.16813 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Ouch! Fell 20.1527 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Ouch! Fell 15.88797 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Non-convex MeshColliders with non-kinematic Rigidbodies are no longer supported in Unity 5.0.
- 
-(Filename:  Line: 1278)
-
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.912949 ms
-
-Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 519.
-Total: 1.990767 ms (FindLiveObjects: 0.031393 ms CreateObjectMapping: 0.045580 ms MarkObjects: 0.140063 ms  DeleteObjects: 1.773126 ms)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 798 -> priority: 1 
-  Thread -> id: 794 -> priority: 1 
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 44.450706 ms
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2286.
-Total: 0.555422 ms (FindLiveObjects: 0.093274 ms CreateObjectMapping: 0.037128 ms MarkObjects: 0.335366 ms  DeleteObjects: 0.088746 ms)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 428 -> priority: 1 
-  Thread -> id: 168c -> priority: 1 
-Ouch! Fell 18.73588 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Ouch! Fell 16.24986 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
-Ouch! Fell 20.00647 units!
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebug.gen.cpp Line: 56)
-
+Crash!!!
